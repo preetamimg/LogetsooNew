@@ -1,0 +1,3073 @@
+$inbox-leftBar-width: 19em;
+
+body {
+    direction: ltr;
+    & .flatpickr-calendar {
+        direction: ltr;
+    }
+    & .select2-dropdown {
+        direction: ltr !important;
+    }
+    & .emojionearea-editor {
+        direction: ltr !important;
+    }
+    // & .highchartSection {
+    //     & .highcharts-figure {
+    //         & .highcharts-container  {
+    //             direction: ltr !important;
+    //         }
+    //     }
+    // }
+    &.ar {
+        & .registerAsSellerPage {
+            & .registerCard {
+                & .navItems {
+                    & .navItem {
+                        &.active {
+                            &~.navItem {
+                                & .navIcon {
+                                    & span {
+                                        &::after {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0.3em !important;
+                                            left: 0.2em !important;
+                                            height: 0.3em !important;
+                                        }
+                                        &::before {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0em !important;
+                                            left: 0em !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .navIcon {
+                            & span {
+                                &::before,
+                                &::after {
+                                    transform: rotate(-315deg) scaleX(-1) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .addProductPage {
+            & .addProductCard {
+                & .navItems {
+                    & .navItem {
+                        &.active {
+                            &~.navItem {
+                                & .navIcon {
+                                    & span {
+                                        &::after {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0.3em !important;
+                                            left: 0.2em !important;
+                                            height: 0.3em !important;
+                                        }
+                                        &::before {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0em !important;
+                                            left: 0em !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .navIcon {
+                            & span {
+                                &::before,
+                                &::after {
+                                    transform: rotate(-315deg) scaleX(-1) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@mixin allOtherPages-mixin() {
+
+    // ##################  SUPPLIER LOGIN PAGE CODE START  ################## //
+    .supplierLoginPage {
+        background-image: url(../img/newBanner.jpg);
+        background-color: #f1f0f0;
+        background-size: cover;
+        // background-position: top -8vh left;
+        background-repeat: no-repeat;
+        & .loginForm {
+            max-width: 18em;
+            & .loginHeading {
+                color: $black;
+                & span {
+                    font-size: 1.3em;
+                }
+            }
+            & .resetInstructions {
+                color: $gray-500;
+                & span {
+                    font-size: 0.65em;
+                }
+            }
+            & .passwordMatchAlert {
+                & span {
+                    font-size: 0.65em;
+                }
+                & img {
+                    height: 0.8em;
+                }
+                & .passwordDefault {
+                    color: $gray-500;
+                }
+                & .passwordMatch {
+                    color: $success;
+                }
+                & .passwordNotMatch {
+                    color: $danger;
+                }
+                &.passMatch {
+                    & .passwordDefault {
+                        display: none;
+                    }
+                    & .passwordMatch {
+                        display: block !important;
+                    }
+                }
+                &.passNotMatch {
+                    & .passwordDefault {
+                        display: none;
+                    }
+                    & .passwordNotMatch {
+                        display: block !important;
+                    }
+                }
+            }
+            & .formStyle2 {
+                & .resetPasswordBtn {
+                    font-size: .7em;
+                }
+                & .form-check {
+                    & .form-check-input {
+                        &:valid {
+                            border-color: $theme1
+                        }
+                        &:valid:checked {
+                            background-color: $theme1;
+                            border-color: $theme1
+                        }
+                        &:valid ~ .form-check-label,
+                        &:valid:checked ~ .form-check-label {
+                            color: $dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ##################  SUPPLIER LOGIN PAGE CODE END  ################## //
+
+    // ##################  REGISTER AS SELLER PAGE CODE START  ################## //
+    .registerAsSellerPage {
+        background-color: lighten($theme1, 51);
+        & .registerCard {
+            max-width: 32em;
+            & .navItems {
+                & .navItem {
+                    cursor: default;
+                    &::before {
+                        background-color: $gray-200;
+                        content: "";
+                        position: absolute;
+                        top: -1.6em;
+                        right: 0em;
+                        bottom: 0em;
+                        left: 0em;
+                        height: 0.1em;
+                        margin: auto;
+                    }
+                    &:first-child::before {
+                        width: 50%;
+                        right: auto;
+                    }
+                    &:last-child::before {
+                        width: 50%;
+                        left: auto;
+                    }
+                    &::after {
+                        content: '';
+                    }
+                    & .navIcon {
+                        & span {
+                            width: 1em;
+                            height: 1em;
+                            background-color: $gray-800;
+                            &::before,
+                            &::after {
+                                border-color: $white;
+                                content: "";
+                                position: absolute;
+                                top: 0em;
+                                right: 0em;
+                                bottom: 0.2em;
+                                left: 0em;
+                                margin: auto;
+                                width: 0.6em;
+                                height: 0.3em;
+                                border-width: 0 0 0.1em 0.1em;
+                                border-style: solid;
+                                transform: rotate(-45deg);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    & .navTitle {
+                        & span {
+                            color: $gray-500;
+                            font-size: .7em;
+                        }
+                    }
+                    &.active {
+                        &::before {
+                            background-color: $gray-200;
+                        }
+                        & .navIcon {
+                            & span {
+                                width: 1.3em;
+                                height: 1.3em;
+                                background-color: $theme1;
+                                &::before {
+                                    opacity: 1;
+                                }
+                                &::after {
+                                }
+                            }
+                        }
+                        & .navTitle {
+                            & span {
+                                color: $gray-700;
+                            }
+                        }
+                        & ~ .navItem {
+                            &::before {
+                                background-color: $gray-200;
+                            }
+                            & .navIcon {
+                                & span {
+                                    width: 1.3em;
+                                    height: 1.3em;
+                                    background-color: $theme1;
+                                    &::before {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: 0.2em;
+                                        left: -0.2em;
+                                    }
+                                    &::after {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: -0.1em;
+                                        left: 0.3em;
+                                        height: 0.17em;
+                                    }
+                                }
+                            }
+                            & .navTitle {
+                                & span {
+                                    color: $gray-700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .registerCardBody {
+                & .innerBody {
+                    & input[type=number]::-webkit-inner-spin-button, 
+                    & input[type=number]::-webkit-outer-spin-button { 
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        margin: 0; 
+                    }
+                    & input[type=file].position-absolute {
+                        z-index: 2 !important;
+                    }
+                    & div.form-control {
+                        text-overflow: ellipsis;
+                        padding-top: 0.7em;
+                        direction: rtl;
+                        text-align: left;
+                    }
+                    & .tagify__tag:focus div::before, & .tagify__tag:hover:not([readonly]) div::before {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    & .tagify__tag>div {
+                        border-radius: 50em;
+                    }
+                    & .tagify__tag__removeBtn {
+                        color: $gray-600;
+                    }
+                    & .tagify__tag__removeBtn:hover {
+                        color: $white;
+                        background-color: $danger;
+                    }
+                    & .tagify__dropdown * {
+                        font-size: .7em !important;
+                    }
+                    & .tagify.form-control {
+                        height: auto;
+                        padding-right: 3em;
+                        &::before {
+                            content: "";
+                            background-image: url(../img/drpdwn-arrow.png);
+                            position: absolute;
+                            top: 0em;
+                            right: .8em;
+                            bottom: 0em;
+                            left: auto;
+                            margin: auto;
+                            width: 1em;
+                            height: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        &:not(.tagify--empty) {
+                            & .tagify__input {
+                                &::before {
+                                    content: '' !important;
+                                }
+                            }
+                        }
+                    }
+                    & .otpTitle {
+                        & span {
+                            font-size: 1em;
+                            color: $black;
+                        }
+                    }
+                    & .otpIstruction {
+                        & span {
+                            font-size: 0.7em;
+                            color: $gray-500;
+                        }
+                    }
+                    & .otpFields {
+                        & input {
+                            height: auto;
+                            aspect-ratio: 2 /2;
+                            font-size: 1em;
+                            &::-moz-selection { /* Code for Firefox */
+                                color: $black;
+                                background: $white;
+                            }
+                            &::selection {
+                                color: $black;
+                                background: $white;
+                            }
+                        }
+                    }
+                    & .resendOtp {
+                        & span {
+                            font-size: .7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ##################  REGISTER AS SELLER PAGE CODE END  ################## //
+
+    // ##################  SUCCESS REGISTER AS SELLER PAGE CODE START  ################## //
+    .successRegisterAsSellerPage {
+        background-color: lighten($theme1, 51);
+        & .successPopup {
+            max-width: 20em;
+            & .congratulationsIcon {
+                & img {
+                    height: 4em;
+                }
+            }
+            & .title {
+                & span {
+                    font-size: 1.1em;
+                }
+            }
+            & .subTitle {
+                & span {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+    // ##################  SUCCESS REGISTER AS SELLER PAGE CODE END  ################## //
+
+    // ##################  PACKAGE PAYMENT SUCCESS PAGE CODE START  ################## //
+    .packagePaymentSuccessPage {
+        & .successPopup {
+            background-color: lighten($theme1, 51);
+            max-width: 18em;
+            padding: 2.5em;
+            & .congratulationsIcon {
+                & img {
+                    height: 4em;
+                }
+            }
+            & .title {
+                & span {
+                    font-size: 1em;
+                }
+            }
+            & .subTitle {
+                & span {
+                    font-size: 0.65em;
+                }
+            }
+            & .btnStyle2{
+                width: 75%;
+            }
+        }
+    }
+    // ################## PACKAGE PAYMENT SUCCESS PAGE CODE END  ################## //
+    
+    // ##################  AD PACKAGES PAGE CODE START  ################## //
+    .adPackagesPage {
+        & .uploadAd{
+            & .title{
+                & span{
+                    font-size: 1em;
+                }
+            }
+            & .subtitle{
+                & span{
+                    font-size: 0.7em;
+                }
+            }
+            & .formStyle2{
+                & .form-label{
+                    font-size: 0.55em;
+                }
+                & .additionalText{
+                    font-size: 0.55em;
+                    color: $gray-600;
+                }
+                & .form-control{
+                    font-size: 0.6em;
+                    padding-left: 1em;
+                    &::placeholder {
+                        color: $gray-700;
+                    }
+                }
+                & .dropify-wrapper{
+                    margin-top: 0.1em;
+                    border: 0.031em dashed $theme1;
+                    border-radius: 0.5em;
+                    height: 16.25em;
+                    &.has-preview{
+                        border: none !important;
+                    }
+                    & .dropify-message{
+                        & p{
+                            font-size: 0.2em !important;
+                            color: $theme1;
+                        }
+                        & .file-icon{
+                            &::before{
+                                content: '';
+                                background: url(../img/addimg-icn.png);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 0.5em;
+                                height: 0.5em;
+                            }
+                        }
+                    }
+                    & .dropify-preview{
+                        padding: 0;
+                        & .dropify-render{
+                            & img{
+                                height: 100%;
+                                width: 100%;
+                                max-height: unset !important;
+                            }
+                        }
+                    }
+                }
+                & .preview{
+                    font-size: 0.6em;
+                    cursor: pointer;
+                    text-decoration: none;
+                    & img{
+                        height: 1.2em;
+                    }
+                }
+                & .btnStyle2{
+                    font-size: 0.6em;
+                    padding: 0 1.6em;
+                    &.cancleBtn{
+                        border: 0.063 solid $theme1;
+                        &:hover{
+                            background: $theme1;
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+
+        }
+        & .adPackageDetail{
+            background-color: lighten($theme1, 51);
+            height: 100%;
+            & .packageHeading{
+                border-bottom: 0.063em solid $gray-200;
+                & span{
+                    font-size: 0.8em;
+                }
+            }
+            & .packageDescription{
+                & .packageDescriptionRow{
+                    border-bottom: 0.063em solid $gray-200;
+                    padding: 0.7em 0;
+                    & .starImg{
+                        height: 1.1em;
+                    }
+                    & span{
+                        font-size: 0.6em;
+                        color: $gray-500;
+                    }
+                }
+                & .packageLocation{
+                    & span{
+                        font-size: 0.6em;
+                        color: $gray-500;
+                    }
+                    & .locationImg{
+                        height: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    // ################## AD PACKAGES PAGE CODE END  ################## //
+    
+    // ##################  AD PACKAGES MODULE SELLER PACKAGE PAGE CODE START  ################## //
+    .adPackageModuleSellerPackagePage {
+        & .packageCard {
+            border-color: $gray-200 !important;
+            & .packageCardBody {
+                &:first-child {
+                    font-size: 0.9em;
+                }
+                & .packageIcon {
+                    & img {
+                        height: 2.1em;
+                        width: 2.1em;
+                        object-fit: contain;
+                    }
+                }
+                & .packageTitle {
+                    & > span {
+                        font-size: 1.1em;
+                    }
+                }
+                & .packagePrice {
+                    & > span {
+                        font-size: 1.4em;
+                    }
+                }
+                & .packName {
+                    border-top: 0.063em solid $gray-200;
+                    & .packageLabel {
+                        color: $gray-600;
+                        & > span {
+                            font-size: 0.65em;
+                        }
+                    }
+                    & .packageValue {
+                        & > span {
+                            font-size: 0.7em;
+                        }
+                        & .packageValueIcon {
+                            & img {
+                                width: 1.5em;
+                                height: 1.5em;
+                                object-fit: contain;
+                            }
+                        }
+                        & .packageValueTitle {
+                            color: $black;
+                            & span {
+                                font-size: .65em;
+                            }
+                        }
+                        & .packageValueSubTitle {
+                            color: $gray-600;
+                            & span {
+                                font-size: .65em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ################## AD PACKAGES MODULE SELLER PACKAGE PAGE CODE END  ################## //
+
+    // ##################  ADD PRODUCT PAGE CODE START  ################## //
+    .addProductPage {
+        background-color: lighten($theme1, 51);
+        & .addProductCard {
+            & .startCard {
+                width: 14em;
+            }
+            & .endCard {
+                width: calc(100% - 15em);
+            }
+            & .navItems {
+                & .navItem {
+                    &::before {
+                        background-color: $gray-200;
+                        content: "";
+                        position: absolute;
+                        top: 0em;
+                        right: auto;
+                        bottom: 0em;
+                        left: 1.2em;
+                        width: 0.1em;
+                        margin: auto;
+                    }
+                    &:first-child::before {
+                        height: 50%;
+                        bottom: auto;
+                    }
+                    &:last-child::before {
+                        height: 50%;
+                        top: auto;
+                    }
+                    &::after {
+                        content: '';
+                    }
+                    & .navIcon {
+                        & span {
+                            width: 1em;
+                            height: 1em;
+                            background-color: $gray-800;
+                            &::before,
+                            &::after {
+                                border-color: $white;
+                                content: "";
+                                position: absolute;
+                                top:0em;
+                                right: 0em;
+                                bottom: 0.1em;
+                                left: 0em;
+                                margin: auto;
+                                width: 0.5em;
+                                height: 0.3em;
+                                border-width: 0 0 0.1em 0.1em;
+                                border-style: solid;
+                                transform: rotate(-45deg);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    & .navTitle {
+                        & span {
+                            color: $gray-500;
+                            font-size: .65em;
+                        }
+                    }
+                    &.active {
+                        &::before {
+                            background-color: $gray-200;
+                        }
+                        & .navIcon {
+                            & span {
+                                background-color: $theme1;    
+                                transform: scale(1.3);
+                                &::before {
+                                    opacity: 1;
+                                }
+                                &::after {
+                                }
+                            }
+                        }
+                        & .navTitle {
+                            & span {
+                                color: $gray-700;
+                            }
+                        }
+                        & ~ .navItem {
+                            &::before {
+                                background-color: $gray-200;
+                            }
+                            & .navIcon {
+                                & span {
+                                    background-color: $theme1;   
+                                    transform: scale(1.3);
+                                    &::before {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: .2em;
+                                        left: -0.2em;
+                                    }
+                                    &::after {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: .2em;
+                                        left: -0.05em;
+                                        height: 0.2em;
+                                    }
+                                }
+                            }
+                            & .navTitle {
+                                & span {
+                                    color: $gray-700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .addProductCardBody {
+                & .innerBody {
+                    box-shadow: 50em 0em 0em 50em $white;
+                    & .headingAddProduct {
+                        & span {
+                            font-size: 1.1em;
+                        }
+                    }
+                    & .customAlert {
+                        background-color: lighten($theme1, 51);
+                        & img {
+                            height: 1.1em;
+                        }
+                        & span {
+                            color: $theme1;
+                            font-size: 0.7em;
+                        }
+                    }
+                    & input[type=number]::-webkit-inner-spin-button, 
+                    & input[type=number]::-webkit-outer-spin-button { 
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        margin: 0; 
+                    }
+                    & input[type=file].position-absolute {
+                        z-index: 2 !important;
+                    }
+                    & div.form-control {
+                        text-overflow: ellipsis;
+                        padding-top: 0.7em;
+                        direction: rtl;
+                        text-align: left;
+                    }
+                    & .tagify__tag:focus div::before, & .tagify__tag:hover:not([readonly]) div::before {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    & .tagify__tag>div {
+                        border-radius: 50em;
+                        padding: 0.3em;
+                        display: flex;
+                        align-items: center;
+                    }
+                    & .tagify__tag__removeBtn {
+                        color: $gray-600;
+                        margin-right: 0.1em;
+                        margin-left: 0.1em;
+                    }
+                    & .tagify__tag__removeBtn:hover {
+                        color: $white;
+                        background-color: $danger;
+                    }
+                    & .tagify__dropdown * {
+                        font-size: .7em !important;
+                    }
+                    & .tagify.form-control {
+                        height: auto;
+                        padding-right: 3em;
+                        &::before {
+                            content: "";
+                            background-image: url(../img/drpdwn-arrow.png);
+                            position: absolute;
+                            top: 0em;
+                            right: 0.8em;
+                            bottom: 0em;
+                            left: auto;
+                            margin: auto;
+                            width: 1em;
+                            height: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+                    & .otpTitle {
+                        & span {
+                            font-size: 1em;
+                            color: $black;
+                        }
+                    }
+                    & .otpIstruction {
+                        & span {
+                            font-size: 0.7em;
+                            color: $gray-500;
+                        }
+                    }
+                    & .otpFields {
+                        & input {
+                            height: auto;
+                            aspect-ratio: 2 /2;
+                            font-size: 1em;
+                            &::-moz-selection { /* Code for Firefox */
+                                color: $black;
+                                background: $white;
+                            }
+                            &::selection {
+                                color: $black;
+                                background: $white;
+                            }
+                        }
+                    }
+                    & .resendOtp {
+                        & span {
+                            font-size: .7em;
+                        }
+                    }
+                    & .dropifyVideoInput{
+                        & .dropify-wrapper{
+                            margin-top: 0.1em;
+                            border: 0.031em dashed $theme1;
+                            border-radius: 0.5em;
+                            height: 7em;
+                            & .dropify-message{
+                                & p{
+                                    font-size: 0.2em !important;
+                                    color: $theme1;
+                                }
+                                & .file-icon{
+                                    &::before{
+                                        content: '';
+                                        background: url(../img/add-video.png);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        width: 0.5em;
+                                        height: 0.5em;
+                                    }
+                                }
+                            }
+                            & .dropify-preview{
+                                padding: 0;
+                                & .dropify-render{
+                                    & img{
+                                        height: 100%;
+                                        width: 100%;
+                                        max-height: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .dropifyImageInput{
+                        & .dropify-wrapper{
+                            margin-top: 0.1em;
+                            border: 0.031em dashed $theme1;
+                            border-radius: 0.5em;
+                            height: 7em;
+                            & .dropify-message{
+                                & p{
+                                    font-size: 0.2em !important;
+                                    color: $theme1;
+                                }
+                                & .file-icon{
+                                    &::before{
+                                        content: '';
+                                        background: url(../img/addimg-icn.png);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        width: 0.5em;
+                                        height: 0.5em;
+                                    }
+                                }
+                            }
+                            & .dropify-preview{
+                                padding: 0;
+                                & .dropify-render{
+                                    & img{
+                                        height: 100%;
+                                        width: 100%;
+                                        max-height: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .dropifyExtraInput{
+                        & .dropify-wrapper{
+                            margin-top: 0.1em;
+                            border: 0.031em dashed $gray-500;
+                            border-radius: 0.5em;
+                            height: 7em;
+                            & .dropify-message{
+                                & p{
+                                    font-size: 0.2em !important;
+                                    color: $gray-500;
+                                    margin-top: 0;
+                                    line-height: 1.175em;
+                                }
+                                & .file-icon{
+                                    &::before{
+                                        content: 'Add More';
+                                        font-size: 0.2em;
+                                        color: $theme1;
+                                        width: 100%;
+                                        font-family: unset;
+                                    }
+                                }
+                            }
+                            & .dropify-preview{
+                                padding: 0;
+                                & .dropify-render{
+                                    & img{
+                                        height: 100%;
+                                        width: 100%;
+                                        max-height: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .dropifyImageInput1{
+                        & .dropify-wrapper{
+                            margin-top: 0.1em;
+                            border: 0.031em dashed $theme1;
+                            border-radius: 0.5em;
+                            height: 6em;
+                            & .dropify-message{
+                                & p{
+                                    font-size: 0.2em !important;
+                                    color: $theme1;
+                                }
+                                & .file-icon{
+                                    &::before{
+                                        content: '';
+                                        background: url(../img/addimg-icn.png);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        width: 0.5em;
+                                        height: 0.5em;
+                                    }
+                                }
+                            }
+                            & .dropify-preview{
+                                padding: 0;
+                                & .dropify-render{
+                                    & img{
+                                        height: 100%;
+                                        width: 100%;
+                                        max-height: unset !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &[class*="addProductForm"] {
+                        & input.form-control {
+                            min-height: 3.15em;
+                            top: -0.1em;
+                            right: -0.1em;
+                            bottom: -0.1em;
+                            left: -0.1em;
+                        }
+                        & .tagify.productSizeInput {
+                            border: none;
+                            gap: 0.1em;
+                            padding-right: 0.5em;
+                            &::before {
+                                display: none;
+                            }
+                        }
+                        & .tagify__input {
+                            min-width: 0.1em;
+                            padding: 0.6em;
+                            margin: 0;
+                        }
+                        & .tagify__tag {
+                            &:hover .tagify__tag__avatar-wrap {
+                                transform: none;
+                            }
+                            & > div {
+                                &::before {
+                                    border-radius: 0.3em;
+                                    background-color: lighten($theme1, 50);
+                                    box-shadow: none;
+                                }
+                                & .tagify__tag-text {
+                                    font-size: 0.9em;
+                                    color: $theme1;
+                                }
+                            }
+                            & .tagify__tag__removeBtn {
+                                font-size: 1.5em;
+                                margin-right: 0.292em;
+                                margin-left: 0.292em;
+                                &:hover {
+                                    & ~ div {
+                                        & .tagify__tag-text {
+                                            color: darken($danger, 10);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn-group{
+                        & .btn-check{
+                            &:checked{
+                                & + .productStatusRadioBtn{
+                                    background: $theme1 !important;
+                                    color: $white;
+                                }
+                            }
+                        }
+                        & .productStatusRadioBtn{
+                            border: 0.063em solid $gray-200;
+                            & span{
+                                font-size: 0.65em;
+                            }
+                            &:first-of-type{
+                                border-radius: 0.3em 0 0 0.3em !important;
+                            }
+                            &:last-of-type{
+                                border-radius: 0 0.3em 0.3em 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ##################  ADD PRODUCT PAGE CODE END  ################## //
+
+    // ##################  PRODUCTS PAGE CODE START  ################## //
+    .ProductsListPage {
+        & .headerRow {
+            & .heading {
+                & span {
+                    font-size: 1.1em;
+                }
+            }
+            & .searchInput {
+                padding-left: 2.5em;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+            & .searchIconImg {
+                position: absolute;
+                top: 0.55em;
+                left: 0.5em;
+                height: 0.8em;
+            }
+            & .sendReviewBtn {
+                color: $white;
+                border-radius: 0.27em;
+                & span {
+                    font-size: 0.65em;
+                }
+            }
+        }
+    }
+    // ##################  PRODUCTS PAGE CODE END  ################## //
+
+    // ##################  PRODUCTS REVIEW PAGE CODE START  ################## //
+
+    .productsReviewPage {
+        background-color: lighten($theme1, 51);
+        & .productReviewInner {
+            max-width: 22em;
+            & .productReviewInnerTop {
+                & .reviewWlcmHeading {
+                    color: $black;
+                    & span {
+                        font-size: 1.1em;
+                    }
+                }
+                & .reviewWlcmText {
+                    color: $black;
+                    & span {
+                        font-size: 0.85em;
+                    }
+                }
+                & .reviewProductImg {
+                    & img {
+                        height: 2.45em;
+                    }
+                }
+                & .reviewProductDes {
+                    color: $gray-500;
+                    & span {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+            & .productReviewInnerBottom {
+                background-color: $white;
+                border-radius: 0.63em;
+                & .emotionHeading {
+                    & span {
+                        font-size: 0.75em;
+                    }
+                }
+                & .emotionLable {
+                    & img {
+                        height: 2.6em;
+                        filter: grayscale(0.9);
+                    }
+                }
+                & .emotionInput {
+                    &:checked {
+                        &+ .emotionLable {
+                            & img {
+                                filter: grayscale(0) !important;
+                            }
+                        }
+                    }
+                }
+                & .starLable {
+                    & img {
+                        height: 2.2em;
+                        filter: grayscale(0.9);
+                    }
+                }
+                & .starInput {
+                    &:checked {
+                        &~ .starLable {
+                            & img {
+                                filter: grayscale(0) !important;
+                            }
+                        }
+                    }
+                }
+
+                & .productReviewComment {
+                    height: inherit ;
+                }
+                & .sendReviewBtn {
+                    color: $white;
+                    border-radius: 0.27em;
+                    & span {
+                        font-size: .65em;
+                    }
+                }
+            }
+        }
+    }
+
+    // ##################  PRODUCTS REVIEW PAGE CODE END  ################## //
+
+}
+
+// ##################  PREVIEW MODAL CODE START  ################## //
+.previewModal{
+    & .modal-header{
+        padding: 0.65em 0;
+        & .backArrow {
+            & span {
+                & img {
+                    height: 0.8em;
+                }
+            }
+        }
+        & .previewModalHeading{
+            & span{
+                font-size: 0.9em;
+            }
+        }
+    }
+    & .modal-body{
+        background-color: lighten($theme1, 51);
+        & .navStyle1 {
+            &.nav-pills {
+                & .nav-item{
+                    & .nav-link {
+                        & span {
+                            color: $gray-600;
+                            font-size: 0.8em;
+                        }
+                        &.active {
+                            background-color: transparent;
+                            & span {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .navStyle2 {
+            &.nav-pills{
+                & .nav-item{
+                    & .nav-link{
+                        padding: 0.6em;
+                        background: $white;
+                        &.pcNavLink{
+                            border-radius: 0.3em 0 0 0.3em !important;
+                        }
+                        &.mobileNavLink{
+                            border-radius: 0 0.3em 0.3em 0 !important;
+                        }
+                        & img{
+                            height: 0.9em;
+                        }
+                        & span{
+                            font-size: 0.6em;
+                            color: $gray-700;
+                        }
+                        &.active{
+                            background: $theme1;
+                            & img{
+                                filter: brightness(10)
+                            }
+                            & span{
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tab-content{
+            & .tab-pane{
+                & .elitepcImg {
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        // min-height: 100vh;
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 8.7%;
+                        right: 0%;
+                        bottom: 52.4%;
+                        left: 28.8%;
+                        // filter: brightness(0);
+                    }
+                }
+                & .elitemobImg {
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        // min-height: 100vh;
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 9.79%;
+                        right: 0%;
+                        bottom: 68.6%;
+                        left: 6.7%;
+                        // filter: brightness(0);
+                    }
+                }
+                & .silverpcImg {
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 26.7%;
+                        right: 0%;
+                        bottom: 47.8%;
+                        left: 9.4%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+                & .silvermobImg {
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: 78.1%;
+                        height: 21.7%;
+                        position: absolute;
+                        top: 48%;
+                        right: 0%;
+                        bottom: 38.5%;
+                        left: 11.1%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+                & .platinumpcImg {
+                    // max-height: calc(100vh - 10em);
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 5.84%;
+                        right: 0%;
+                        bottom: 88.7%;
+                        left: 28.1%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                    & .adImg2 {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 86.15%;
+                        right: 0%;
+                        bottom: 8.37%;
+                        left: 28.3%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+                & .platinummobImg {
+                    // max-height: calc(100vh - 10em);
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: 78.4%;
+                        height: 7.78%;
+                        position: absolute;
+                        top: 10.4%;
+                        right: 0%;
+                        bottom: 47.2%;
+                        left: 10.8%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                    & .adImg2 {
+                        width: 78.4%;
+                        height: 7.8%;
+                        position: absolute;
+                        top: 82.65%;
+                        right: 0%;
+                        bottom: 44.2%;
+                        left: 10.8%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+                & .goldpcImg {
+                    // max-height: calc(100vh - 10em);
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: auto;
+                        height: -webkit-fill-available;
+                        position: absolute;
+                        top: 41.4%;
+                        right: 0%;
+                        bottom: 33.1%;
+                        left: 9.4%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+                & .goldmobImg {
+                    // max-height: calc(100vh - 10em);
+                    position: relative;
+                    width: auto;
+                    height: 100%;
+                    & .pcFrame {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                    & .adImg {
+                        width: 78.3%;
+                        height: 21.7%;
+                        position: absolute;
+                        top: 66.4%;
+                        right: 0%;
+                        bottom: 43.7%;
+                        left: 10.8%;
+                        // filter: brightness(0);
+                        border-radius: 0.33em;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+// ##################  PREVIEW MODAL CODE END  ################## //
+
+
+// ##################  SEND REVIEW MODAL CODE START  ################## //
+.sendReviewModal {
+    & .modal-dialog {
+        & .modal-header {
+            & .modalTitle {
+                color: $black;
+                & span {
+                    font-size: 0.92em;
+                }
+            }
+            & .closeBtn {
+                height: 1.6em;
+                cursor: pointer;
+            }
+        }
+        & .modal-body {
+            & .sendReviewBtn {
+                color: $white;
+                border-radius: 0.27em; 
+                & span {
+                    font-size: 0.65em;
+                }
+            }
+        }
+    }
+}
+
+// ##################  SEND REVIEW MODAL CODE END  ################## //
+
+
+// ##################  INBOX PAGE CODE START  ################## //
+
+.inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            width: $inbox-leftBar-width;
+            & .leftInboxInner {
+                background-color: lighten($theme1, 51);
+                border: 0.063em solid lighten($theme1, 51);
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        color: $theme1;
+                        font-size: 1em;
+                        &::after {
+                            background-image: url(../img/drpdown-arrow-blue.png);
+                            border: none;
+                            width: 0.8em;
+                            height: 0.5em;
+                            background-size: cover;
+                        }
+                    }
+                    & .dropdown-menu {
+                        padding: 0.4em;
+                        left: auto;
+                        & .dropdown-item {
+                            font-size: .8em;
+                            color: #6c757d;
+                            &:hover,
+                            &:active {
+                                background-color: $theme1;
+                                color: $white;
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0.63em;
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    overflow-y: auto;
+                    & .leftInboxCard {
+                        border-top: 0.063em solid $gray-200;
+                        border-bottom: 0.063em solid $gray-200;
+                        text-decoration: none;
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                    background-color: $green;
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                    background-color: $pink;
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                    background-color: $cyan;
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                    background-color: $red;
+                                }
+                            }
+                        }
+                        & .userBox {
+                            width: 2.2em;
+                            height: 2.2em;
+                            & img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                            & span {
+                                text-transform: uppercase;
+                                color: $white;
+                                font-size: 0.83em;
+                                border-radius: 50%;
+                            }
+                        }
+                        & .iuserDetails {
+                            color: $gray-500;
+                            & .iUserName {
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                    height: 0.7em;
+                                }
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                            & .iUserMessage {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                                color: $black !important;
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                            background-color: $white;
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                height: 1.5em;
+                                width: 1.5em;
+                                background-color: transparent;
+                                border-radius: 0.3em;
+                                color: $black;
+                                & span {
+                                    font-size: 0.7em;
+                                }
+                                &.prev,
+                                &.next {
+                                    background-color: $gray-200;
+                                    & img {
+                                        height: 0.6em;
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    background-color: $theme1;
+                                    color: $white;
+                                    & img {
+                                        filter: brightness(10);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            width: calc(100% - $inbox-leftBar-width);
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                            height: 0.8em;
+                        }
+                    }
+                & .rightInnerTopSection {
+                    padding: 0.3em;
+                    flex: 0 0 auto;
+                    border: 0.063em solid $gray-200;
+                }
+                & .rightInnerMiddleSection {
+                    overflow-y: auto;
+                    border-left: 0.063em solid $gray-200;
+                    border-right: 0.063em solid $gray-200;
+                    padding-top: 0.75em;
+                    padding-bottom: 0.75em;
+                    & .RightuserImg {
+                        & img {
+                            height: 1.8em;
+                        }
+                    }
+                    & .RightuserName {
+                        font-size: 0.65em;
+                    }
+                    & .RightuserTime {
+                        color: $gray-500;
+                        & span {
+                            font-size: 0.65em;
+                        }
+                    }
+                    & .customTable {
+                        background-color: $gray-200;
+                        & thead {
+                            & tr {
+                                & th {
+                                    // white-space: nowrap;
+                                    &.productInfoTh {
+                                        width: 50%;
+                                    }
+                                    & span {
+                                        font-size: 0.65em;
+                                        color: $gray-600;
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    // white-space: nowrap;
+                                    vertical-align: middle;
+                                    & span {
+                                        font-size: 0.65em;
+                                    }
+                                    & img {
+                                        height: 2.7em;
+                                    }
+                                    & .colorSpan {
+                                        height: 1.93em;
+                                        background-color: $gray-600;
+                                        border: 0.2em solid $black;
+                                        width: 1.93em;
+                                        border-radius: 0.2em;
+                                    }
+                                    
+                                    & .productSizeTd {
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {
+                        color: $gray-600;
+                        font-size: 0.65em;              
+                    }
+                    & .attachImg {
+                        height: 7em;
+                    }
+                }
+                & .rightInnerBottomSection {
+                    flex: 0 0 auto;
+                    border: 0.063em solid $gray-200;
+                    & .replyBtn {
+                        font-size: 0.65em;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+                & .rightInnerBottomSection2 {
+                    flex: 0 0 auto;
+                    & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+                        border-color: $gray-200 !important;
+                        box-shadow: none !important;
+                    }
+                    & .rightInnerBottomSection2Inner {
+                        border: 0.063em solid $gray-200;
+                        border-top: none;
+                        & .sendBtn {
+                            font-size: 0.65em;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &.sendMessage {
+                    & .rightInnerBottomSection {
+                        display: none;
+                    }
+                    & .rightInnerBottomSection2 {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+    & .chatPageInner {
+        & .chatHeading {
+            color: $black;
+            font-size: 1em;
+        }
+        & .userStatus {
+            width: 0.6em;
+            height: 0.6em;
+            position: absolute;
+            top: 80%;
+            right: 0.2em;
+            border: 0.15em solid white;
+            &.online {
+                background-color: $success !important;
+            }
+            &.offline {
+                background-color: $gray-500 !important;
+            }
+            &.waiting {
+                background-color: $warning !important;
+            }
+        }
+        & .userMsgNumber {
+            background-color: $pink;
+            color: $white;
+            height: 1.2em;
+            width: 1.2em;
+            & span {
+                font-size: 0.6em;
+            }
+        }
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            & .userStatus {
+                right: 0.025em !important;
+                top: 72%;
+            }
+        }
+        & .chatUserName {
+            color: $black;
+            font-size: 0.7em;
+        }
+        & .chatUserStatus {
+            color: $gray-500;
+            font-size: 0.55em;
+        }
+        & .mobcloseImg {
+            height: 1.2em;
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                    height: 0.063em;
+                    background-color: $gray-200;
+                    width: 100%;
+                }
+            }
+            & .dividerText {
+                & span {
+                    font-weight: 500;
+                    font-size: 0.65em;
+                    color: $gray-400;
+                }
+            }
+        }
+        & .chatMsgBox {
+            background-color: $gray-100;
+            padding: 0.75em;
+            & .chatMsg {
+                font-size: 0.6em;
+                color: $gray-700;
+            }
+            & .chatTime {
+                font-size: 0.6em;
+                color: $gray-500;
+            }
+        }
+        & .chatAttachedImg {
+            padding: 0.75em;
+            background-color: $gray-100;
+            & img {
+                height: 7em;
+            }
+        }
+        & .rightChatSide {
+            flex-direction: row-reverse;
+            & .row {
+                flex-direction: row-reverse;
+            }
+            & .chatMsgBox {
+                background-color: lighten($theme1, 51);
+            }
+            & .chatTime {
+                text-align: end;
+            }
+        }
+        & .btnField {
+            width: 6em;
+        }
+        & .inputField {
+            width: calc(100% - 6em);
+            visibility: hidden;
+            & .customEmojimojiInput {
+            }
+        }
+        & .attachImgWrapper {
+            display: inline-block;
+            position: absolute;
+            bottom: 0.04em;
+            left: 2.6em;
+            & .attachImgs {
+                height: 1.1em;
+                cursor: pointer;
+            }
+        }
+        & .emojionearea {
+            border: none !important;
+            box-shadow: none !important;
+            & .emojionearea-editor {
+                min-height: 2.2em;
+                font-size: 0.7em;
+                padding-left: 6em;
+            }
+            & .emojionearea-button {
+                left: 0% !important;
+                opacity: 1 !important;
+                bottom: 0em !important;
+                top: unset !important;
+                & .emojionearea-button-open,
+                & .emojionearea-button-close {
+                    background-image: url(../img/attachemoji.png) !important;
+                    background-repeat: no-repeat;
+                    background-position: center !important;
+                    background-size: 1.3em !important;
+                }
+            }
+        }
+        & .emojionearea-picker {
+            left: 0 !important;
+            & .emojionearea-wrapper {
+                &::after {
+                    left: 0 !important;
+                }
+                & .emojionearea-search {
+                    & .search {
+                        border: 0.063em solid $gray-200;
+                        font-size: 0.65em;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1em;
+                        border-radius: 0.4em;
+                    }
+                }
+            }
+        }
+    }
+    & * {
+        &::-webkit-scrollbar {
+            width: .5em;
+            height: .5em;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f100; 
+            border-radius: 50em;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(218, 218, 218, 0); 
+            border-radius: 50em;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(198, 198, 198, 0); 
+        }
+        &:hover > * {
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: rgb(218, 218, 218); 
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: rgb(198, 198, 198); 
+            }
+        }
+
+    }
+}
+
+
+// ##################  INBOX PAGE CODE END  ################## //
+
+
+// ##################  DATA TABLE CODE START  ################## //
+
+.customTableWrapper {
+    visibility: hidden;
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+            display: none !important;
+        }
+        & .customTable {
+            font-size: 0.65em !important;
+            border: 0.063em solid lighten($gray-200, 4);
+            border-collapse: collapse !important;
+            border-radius: 0.25em !important;
+            &:not(.collapsed) {
+                & thead {
+                    & tr {
+                        & th {
+                            &.plusIcon{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            &.plusIcon {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            & thead {
+                background-color: lighten($gray-200, 4);
+                & th {
+                    padding-left: 1.2em;
+                    color: $gray-600;
+                    &:first-child {
+                        // padding-left: 2.6em !important;
+                    }
+                    &.select-checkbox {
+                        width: 2em !important;
+                        & .box{
+                            display: block;
+                            width: 1.05em;
+                            height: 1.05em;
+                            border: 0.063em solid $black;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-radius: 0.2em;
+                            z-index: 2;
+                            &::before {
+                                content: "✓";
+                                position: absolute;
+                                z-index: 1;
+                                display: none;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 1.213em !important;
+                                width: 1.05em !important;
+                                height: 1.05em !important;
+                                color: $gray-600 !important;
+                                text-align: center;
+                                text-shadow: 0.063em 0.063em $gray-600, -0.063em -0.063em $gray-600, 0.063em -0.063em $gray-600, -0.063em 0.063em $gray-600;
+                            }
+                            &.selected {
+                                &::before {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+                    &.plusIcon {
+                        padding-left: 1.2em !important;
+                        width: 2em !important;
+
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                            font-size: 1.1em !important;
+                            opacity: 0.8 !important;
+                            line-height: 0.45em !important;
+                        }
+                    }
+                }
+            }
+            & tbody {
+                &.proListTableBody {
+                    & .dtr-data {
+                        white-space: break-spaces !important;
+                    }
+                }
+                & .inquiryRow {
+                    vertical-align: middle;
+                    &:hover {
+                        background-color: lighten($theme1, 51);
+                    }
+                }
+                & tr {
+                    &.selected>*{
+                        box-shadow: inset 0 0 0 624.938em $theme1;
+                        color: $white;
+                        & img {
+                            filter: brightness(10);
+                        }
+                    }
+                }
+                & td {
+                    padding: 1.2em;
+                    color: $gray-600;
+                    & .statusPill {
+                        padding: 0.125em 0.63em;
+                        border-radius: 0.2em;
+                        --bs-bg-opacity: 0.3 !important;
+                        font-weight: 600;
+                        &.pendingPill {
+                            background-color: lighten($orange, 31);
+                            color: $orange;
+                        }
+                    }
+                    &.plusIcon {
+                        padding-left: 1.2em !important;
+                        width: 2em !important;
+                        &::before {
+                            left: 1.5em !important;
+                        }
+                    }
+                    &.select-checkbox {
+                        width: 2em !important;
+                        &::before {
+                            margin: 0 !important;
+                            top: 50%;
+                            transform: translate(-50% , -50%);
+                            cursor: pointer;
+                        }
+                        &::after {
+                            margin-top: -0.188em !important;
+                            margin-left: 0 !important;
+                            font-size: 1.213em !important;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            cursor: pointer;
+                        }
+                    }
+                    &.outOfStock,
+                    &.zeroQty{
+                        color: $pink;
+                    }
+                    & .actionImg {
+                        height: 1.2em;
+                        cursor: pointer;
+                    }
+                    & .actionImg1 {
+                        height: 1.1em;
+                        cursor: pointer;
+                    }
+                    
+                    & .actionImg2 {
+                        height: 1.9em;
+                        cursor: pointer;
+                    }
+                    &.dtr-control {
+                        &::before {
+                            display: flex !important;
+                            align-items: center;
+                            justify-content: center;
+                            line-height: initial !important;
+                            background-color: $theme1 !important;
+                        }
+                    }
+                    & .dtr-details {
+                        width: 100%;
+                    }
+                    & .inquiryProImg {
+                        & img {
+                            height: 4em;
+                            width: 4em;                          
+                            border-radius: 0.4em;
+                            overflow: hidden;
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                            white-space: break-spaces;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    & .ratingBox {
+                        border-radius: 0.2em;
+                        color: #fff;
+                        img {
+                            height: 0.85em;
+                            margin-bottom: 0.2em;
+                        }
+                    }
+                    & .inquiryUserImg {
+                        height: 3em;
+                        width: 3em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        & img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    & .inquiryCallImg {
+                        height: 1.1em;
+                    }
+                    & .inquiryLocationImg {
+                        height: 1.3em;
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                position: relative;
+                border: 0.063em solid lighten($gray-200, 4);
+                padding: 0.93em 0;
+                border-radius: 0.35em;
+                margin: 0.63em 0 0 0;
+                & .dataTables_info {
+                    font-size: 0.7em;
+                    padding-top: 0 !important;
+                }
+                & .dataTables_paginate {
+                    font-size: 0.7em;
+                    & .paginate_button {
+                        margin: 0 0.3em;
+                        & .page-link {
+                            color: $black !important;
+                            border: none !important;
+                            height: 1.8em;
+                            width: 1.8em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 0.25em;
+                            &:focus {
+                                box-shadow: none !important;
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                                background-color: $gray-200 !important;
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                                background-color: $theme1 !important;
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.dashBoardTable {
+        margin-top: -0.4em;
+        & .dataTables_wrapper  {
+            & .customDashboardTable {
+                border-color: $gray-200!important;
+            }
+            & .row {
+                &:nth-child(3) {
+                    display: none !important;
+                }
+            }
+            & .dInboxRow {
+                opacity: 0.7;
+                &.unread {
+                    opacity: 1 !important;
+                }
+                &:nth-of-type(1n + 1) {
+                    & .inquiryUserImgName {
+                            background-color: $theme1;
+                    }
+                }
+                &:nth-of-type(2n + 2) {
+                    & .inquiryUserImgName {
+                            background-color: $danger;
+                    }
+                }
+                &:nth-of-type(3n + 3) {
+                    & .inquiryUserImgName {
+                            background-color: $pink;
+                    }
+                }
+                &:nth-of-type(4n + 4) {
+                    & .inquiryUserImgName {
+                            background-color: $success;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ##################  DATA TABLE CODE END  ################## //
+
+
+
+// ##################  INQUIRY MAIL OFFCANVAS CODE START  ################## //
+
+.inquiryMailOffcanvas {
+    height: 30em !important;
+    left: unset !important;
+    max-width: 25em !important;
+    & .offcanvas-header {
+        border-bottom: 0.063em solid $gray-200;
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            & .userStatus {
+                right: 0.025em !important;
+                top: 72%;
+                width: 0.6em;
+                height: 0.6em;
+                position: absolute;
+                border: 0.15em solid white;
+                &.online {
+                    background-color: $success !important;
+                }
+                &.offline {
+                    background-color: $gray-500 !important;
+                }
+                &.waiting {
+                    background-color: $warning !important;
+                }
+            }
+        }
+        & .chatUserName {
+            color: $black;
+            font-size: 0.7em;
+        }
+        & .chatUserStatus {
+            color: $gray-500;
+            font-size: 0.55em;
+        }
+        & .closeImg {
+            height: 1.5em;
+            cursor: pointer;
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+        & .chatMsgBox {
+            background-color: $gray-100;
+            padding: 0.75em;
+            & .chatMsg {
+                font-size: 0.6em;
+                color: $gray-700;
+            }
+            & .chatTime {
+                font-size: 0.6em;
+                color: $gray-500;
+            }
+        }
+        & .chatAttachedImg {
+            padding: 0.75em;
+            background-color: $gray-100;
+            & img {
+                height: 7em;
+            }
+        }
+        & .rightChatSide {
+            flex-direction: row-reverse;
+            & .row {
+                flex-direction: row-reverse;
+            }
+            & .chatTime {
+                text-align: end;
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                    height: 0.063em;
+                    background-color: $gray-200;
+                    width: 100%;
+                }
+            }
+            & .dividerText {
+                & span {
+                    font-weight: 500;
+                    font-size: 0.65em;
+                    color: $gray-400;
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        border-top: 0.063em solid $gray-200;
+        & .btnField {
+            width: 6em;
+        }
+        & .inputField {
+            width: calc(100% - 6em);
+        }
+        & .attachImgWrapper {
+            display: inline-block;
+            position: absolute;
+            bottom: 0.04em;
+            left: 2.6em;
+            & .attachImgs {
+                height: 1.1em;
+                cursor: pointer;
+            }
+        }
+        & .emojionearea {
+            border: none !important;
+            box-shadow: none !important;
+            & .emojionearea-editor {
+                min-height: 2.2em;
+                font-size: 0.7em;
+                padding-left: 6em;
+            }
+            & .emojionearea-button {
+                left: 0% !important;
+                opacity: 1 !important;
+                bottom: 0em !important;
+                top: unset !important;
+                & .emojionearea-button-open,
+                & .emojionearea-button-close {
+                    background-image: url(../img/attachemoji.png) !important;
+                    background-repeat: no-repeat;
+                    background-position: center !important;
+                    background-size: 1.3em !important;
+                }
+            }
+        }
+        & .emojionearea-picker {
+            left: 0 !important;
+            & .emojionearea-wrapper {
+                &::after {
+                    left: 0 !important;
+                }
+                & .emojionearea-search {
+                    & .search {
+                        border: 0.063em solid $gray-200;
+                        font-size: 0.65em;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1em;
+                        border-radius: 0.4em;
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            font-size: 0.65em;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    & >*::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+// ##################  INQUIRY MAIL OFFCANVAS CODE END  ################## //
+
+// ##################  INQUIRY INBOX OFFCANVAS CODE START  ################## //
+
+.inboxOffcanvas {
+    height: 30em !important;
+    left: unset !important;
+    max-width: 25em !important;
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+                height: 0.8em;
+            }
+        }
+        & .topCloseBtn {
+            & img {
+                height: 1em;
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+                height: 1.8em;
+            }
+        }
+        & .RightuserName {
+            font-size: 0.65em;
+        }
+        & .RightuserLocation {
+            & img {
+                height: 0.7em;
+            }
+            & span {
+                font-size: 0.65em;
+            }
+        }
+        & .RightuserTime {
+            color: $gray-500;
+            & span {
+                font-size: 0.65em;
+            }
+        }
+        & .table-responsive {
+            & .customTable {
+                background-color: $gray-200;
+                margin-bottom: 0.25em;
+                & thead {
+                    & tr {
+                        & th {
+                            // white-space: nowrap;
+                            &.productInfoTh {
+                            }
+                            & span {
+                                font-size: 0.65em;
+                                color: $gray-600;
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            vertical-align: middle;
+                            & .productInfoTd {
+                                width: 25em;
+                            }
+                            & span {
+                                font-size: 0.65em;
+                            }
+                            & img {
+                                height: 2.7em;
+                            }
+                            & .colorSpan {
+                                height: 1.93em;
+                                background-color: $gray-600;
+                                border: 0.2em solid $black;
+                                width: 1.93em;
+                                border-radius: 0.2em;
+                            }
+                            
+                            & .productSizeTd {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+            &::-webkit-scrollbar-thumb {
+                background-color: $gray-300;
+            }
+            }
+            &::-webkit-scrollbar {
+                height: 0.4em;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                border-radius: 0.63em;
+            }
+        }
+        & .RightMsgText {
+            color: $gray-600;
+            font-size: 0.65em;              
+        }
+        & .attachImg {
+            height: 7em;
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            flex: 0 0 auto;
+            border: 0.063em solid $gray-200;
+            & .replyBtn {
+                font-size: 0.65em;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            flex: 0 0 auto;
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+                border-color: $gray-200 !important;
+                box-shadow: none !important;
+            }
+            & .rightInnerBottomSection2Inner {
+                border: 0.063em solid $gray-200;
+                border-top: none;
+                & .sendBtn {
+                    font-size: 0.65em;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+                display: none;
+            }
+            & .rightInnerBottomSection2 {
+                display: block !important;
+            }
+        }
+
+    }
+
+
+    
+}
+
+
+// ##################  INQUIRY INBOX OFFCANVAS CODE END  ################## //
+
+
+// ##################  DASHBOARD PAGE CODE START  ################## //
+
+.dashboardPage {
+    & .pageHeading {
+        & span {
+            font-size: 1.1em;
+        }
+    }
+    & .dTopCardWrapper {
+        & .dTopCard {
+            border-radius: 0.63em;
+            & .dTopImg {
+                & img {
+                    height: 2.5em;
+                }
+            }
+            & .dTopValue{
+                font-size: 1em;
+            }
+            & .dTopName {
+                font-size: 0.7em;
+                color: $gray-600;
+            }
+        }
+        &:nth-child(1) {
+            & .dTopCard {
+                background-color: lighten($pink, 45);
+            }
+        }
+        &:nth-child(2) {
+            & .dTopCard {
+                background-color: lighten($gray-200, 1.5);
+            }
+        }
+        &:nth-child(3) {
+            & .dTopCard {
+                background-color: lighten($pink, 43);
+            }
+        }
+    }
+    & .dSectionWrapper {
+        border: 0.063em solid $gray-200;
+        border-radius: 0.63em;
+        & .sectionHeader {
+            & .SectionTitle {
+                & span {
+                    font-size: 0.9em;
+                }
+            }
+            & .searchIconImg {
+                position: absolute;
+                top: 0.7em;
+                left: 0.5em;
+                height: 0.8em;
+            }
+            & .SectionBtn {
+                & .ViewBtn {
+                    background-color: $theme1;
+                    color: white;
+                    text-decoration: none;
+                    & span {
+                        font-size: 0.65em;
+                    }
+                }
+            }
+        }
+        & .dChatSection {
+            & .dChatRow {
+                padding-top: 1em;
+                padding-bottom: 1em;
+                border-top: 0.063em solid $gray-200;
+                & .dCUserImg {
+                    & img {
+                        height: 2.2em;
+                        width: 2.2em;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                }
+                & .dCUserName {
+                    font-size: 0.7em;
+                    color: $black;
+                }
+                & .dCUserMsg {
+                    font-size: 0.7em;
+                    color: $gray-600;
+                }
+                & .dCUserTime {
+                    font-size: 0.7em;
+                    color: $gray-600;
+                }
+                & .dCUserMsgNo {
+                    height: 1.3em;
+                    width: 1.3em;
+                    background-color: $pink;
+                    color: $white;
+                    & span {
+                        font-size: 0.7em;
+                    }
+                }
+                & span {
+                    opacity: .6;
+                }
+                &.unread {
+                    & span {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &.highchartSection {
+            & .sectionHeader {
+                border-bottom: 0.063em solid $gray-200;
+            }
+        }
+        &.dSectionHidden {
+            height: 27em;
+            overflow: hidden;
+        }
+
+    }
+    & .inquiryUserImgName {
+        height: 3em;
+        width: 3em;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border-radius: 50%;
+        & span {
+
+        }
+    }
+    &.reportsPage {
+        & .labelVal {
+            font-size: 0.7em;
+            font-weight: 500;
+        }
+        & .labelText1 {
+            font-size: 0.65em;
+        }
+        & .labelColor {
+            height: 0.6em !important;
+            width: 0.6em !important;
+        }
+        & .labelImg {
+            width: 1.2em;
+            min-width: 1.2em;
+            & img {
+                height: 1em;
+            }
+        }
+        & .brRight {
+            border-right: 0.063em solid $gray-300;
+        }
+        & .analyticsName {
+            & span {
+                font-size: 0.9em;
+            }
+        }
+        & .analyticsVal {
+            & span {
+                font-size: 0.7em;
+            }
+        }
+        & .analyticImg {
+            & img {
+                height: 2.2em;
+            }
+        }
+    }
+}
+
+// ##################  DASHBOARD PAGE CODE END  ################## //
+
+
+
+
+
+
+
+
+
+
+.ck-editor {
+    & .ck-placeholder[data-placeholder="Type your title"] {
+        display: none !important;
+    }
+    & .ck-button__label{
+    font-size: 1.8em !important;
+    }
+    & .ck-list__item {
+        & .ck-button {
+            & .ck-button__label{
+            font-size: 2.8em !important;
+            }
+        }
+    }
+    & .ck-toolbar__separator{
+        display: none !important;
+    }
+}
+.ck.ck-reset.ck-dropdown__panel.ck-dropdown__panel_sw.ck-dropdown__panel-visible{
+    max-width: 55em !important;
+}
+.ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+    border-color: $theme1 !important;
+}
+.ck.ck-dropdown.ck-toolbar__grouped-dropdown.ck-toolbar-dropdown * {
+    display: none !important;
+}
+.editor1{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "أدخل وصف المنتج";
+            }
+        }
+    }
+}
+.editor3{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Enter product specifiction";
+            }
+        }
+    }
+}
+.editor4{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "أدخل تحديد المنتج";
+            }
+        }
+    }
+}
+.editor5{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Enter product key benefits";
+            }
+        }
+    }
+}
+.editor6{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "أدخل مزايا مفتاح المنتج";
+            }
+        }
+    }
+}
+.editor7{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Enter product technical details";
+            }
+        }
+    }
+}
+.editor8{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "أدخل التفاصيل الفنية للمنتج";
+            }
+        }
+    }
+}
+.editor9{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Enter package specifiction";
+            }
+        }
+    }
+}
+.editor10{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "أدخل مواصفات الحزمة";
+            }
+        }
+    }
+}
+.editor11{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Reply";
+            }
+        }
+    }
+}
+.editor12{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Reply";
+            }
+        }
+    }
+}
+.arabicEditor{
+    & ~ .ck-editor{
+        & .ck-restricted-editing_mode_standard{
+            direction: rtl !important;
+            text-align: initial !important;
+        }
+    }
+}
+.ck {
+    &.ck-dropdown {
+        &.ck-toolbar-dropdown {
+            & .ck-dropdown__panel_se {
+                & .ck-button {
+                    & svg {
+                        &.ck-button__icon {
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.ck {
+    &.ck-dropdown {
+        &.ck-list-styles-dropdown {
+            & .ck-dropdown__panel_se {
+                & .ck-button {
+                    width: 6em;
+                    height: 6em;
+                    & svg {
+                        &.ck-button__icon {
+                            font-size: 3.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.ck {
+    &.ck-dropdown {
+        & .ck-dropdown__panel_se {
+            & .ck-find-and-replace-form {
+                font-size: 1.6em;
+                & .ck-form__header {
+                    font-size: 1.8em;
+                    padding-left: 0.4em;
+                }
+                & .ck-input-text {
+                    font-size: 2.7em;
+                }
+                & .ck-label {
+                    font-size: 2.2em;
+                }
+                & .ck-labeled-field-view__status {
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+}
+
+.highchartSection {
+    & .highcharts-credits {
+        display: none;
+    }
+    & .highcharts-label {
+        &.highcharts-series-label {
+            display: none;
+        }
+    } 
+    & .highcharts-figure {
+        // height:5em; 
+        // width:100%;
+        & > * * {
+            font-size: calc(64% - -0.2vw) !important;
+        }
+        & .highcharts-title {
+            & .titleValue {
+                font-size: 1.5em !important;
+            }
+        }
+        & .highcharts-scrollbar-button, & .highcharts-scrollbar-rifles , & .highcharts-scrollbar-arrow{
+            // height: 1em !important;
+            display: none !important;
+
+        }
+        & .highcharts-scrollbar-track {
+            height: 1em !important;
+        }
+        & .highcharts-scrollbar-thumb {
+            height: 1em !important;
+        }
+    }
+    & .labelContainer {
+        & .labelColor {
+            width: 0.8em;
+            height: 0.8em;
+            border-radius: 0.1em;
+        }
+        & .labelText {
+            font-size: 0.7em;
+        }
+    }
+    & .graphName {
+        & span {
+            font-size: .9em;
+        }
+    }
+    & .graphValue {
+        & span {
+            font-size: .75em;
+        }
+    }
+}
+.invalid-feedback2 {
+    font-size: 0.7em;
+    color: $danger;
+}
+
+
+

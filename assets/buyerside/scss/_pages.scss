@@ -1,0 +1,1691 @@
+$inbox-leftBar-width: 19em;
+
+body {
+    direction: ltr;
+    &.ar {
+        & .flipImage {
+            transform: scaleX(-1);
+        }
+        & .registerAsBuyerPage {
+            & .registerCard {
+                & .navItems {
+                    & .navItem {
+                        &.active {
+                            &~.navItem {
+                                & .navIcon {
+                                    & span {
+                                        &::after {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0.3em !important;
+                                            left: 0.2em !important;
+                                            height: 0.3em !important;
+                                        }
+                                        &::before {
+                                            opacity: 1;
+                                            top: 0em !important;
+                                            right: 0em !important;
+                                            bottom: 0em !important;
+                                            left: 0em !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .navIcon {
+                            & span {
+                                &::before,
+                                &::after {
+                                    transform: rotate(-315deg) scaleX(-1) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .flatpickr-calendar {
+        direction: ltr;
+    }
+    & .select2 {
+        direction: ltr !important;
+    }
+    & .select2-dropdown {
+        direction: ltr !important;
+    }
+    & .emojionearea-editor {
+        direction: ltr !important;
+    }
+    & .ck-editor {
+        // direction: ltr !important;
+        & .ck-restricted-editing_mode_standard {
+            direction: ltr !important;
+            text-align: initial !important;
+        }
+    }
+}
+
+     
+     // ##################  SUPPLIER LOGIN PAGE CODE START  ################## //
+     .buyerLoginPage {
+        background-image: url(../buyerside/img/BuyerLogin.png);
+        background-color: #f1f0f0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        & .loginForm {
+            max-width: 18em;
+            & .loginHeading {
+                color: $black;
+                & span {
+                    font-size: 1.3em;
+                }
+            }
+            & .resetInstructions {
+                color: $gray-500;
+                & span {
+                    font-size: 0.65em;
+                }
+            }
+            & .passwordMatchAlert {
+                & span {
+                    font-size: 0.65em;
+                }
+                & img {
+                    height: 0.8em;
+                }
+                & .passwordDefault {
+                    color: $gray-500;
+                }
+                & .passwordMatch {
+                    color: $success;
+                }
+                & .passwordNotMatch {
+                    color: $danger;
+                }
+                &.passMatch {
+                    & .passwordDefault {
+                        display: none;
+                    }
+                    & .passwordMatch {
+                        display: block !important;
+                    }
+                }
+                &.passNotMatch {
+                    & .passwordDefault {
+                        display: none;
+                    }
+                    & .passwordNotMatch {
+                        display: block !important;
+                    }
+                }
+            }
+            & .formStyle2 {
+                & .resetPasswordBtn {
+                    font-size: .7em;
+                }
+                & .form-check {
+                    & .form-check-input {
+                        &:valid {
+                            border-color: $theme1
+                        }
+                        &:valid:checked {
+                            background-color: $theme1;
+                            border-color: $theme1
+                        }
+                        &:valid ~ .form-check-label,
+                        &:valid:checked ~ .form-check-label {
+                            color: $dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ##################  SUPPLIER LOGIN PAGE CODE END  ################## //
+
+       // ##################  REGISTER AS BUYER PAGE CODE START  ################## //
+       .registerAsBuyerPage {
+        background-color: lighten($theme1, 51);
+        & .registerCard {
+            max-width: 32em;
+            & .navItems {
+                & .navItem {
+                    cursor: default;
+                    &::before {
+                        background-color: $gray-200;
+                        content: "";
+                        position: absolute;
+                        top: -1.6em;
+                        right: 0em;
+                        bottom: 0em;
+                        left: 0em;
+                        height: 0.1em;
+                        margin: auto;
+                    }
+                    &:first-child::before {
+                        width: 50%;
+                        right: auto;
+                    }
+                    &:last-child::before {
+                        width: 50%;
+                        left: auto;
+                    }
+                    &::after {
+                        content: '';
+                    }
+                    & .navIcon {
+                        & span {
+                            width: 1em;
+                            height: 1em;
+                            background-color: $gray-800;
+                            &::before,
+                            &::after {
+                                border-color: $white;
+                                content: "";
+                                position: absolute;
+                                top: 0em;
+                                right: 0em;
+                                bottom: 0.2em;
+                                left: 0em;
+                                margin: auto;
+                                width: 0.6em;
+                                height: 0.3em;
+                                border-width: 0 0 0.1em 0.1em;
+                                border-style: solid;
+                                transform: rotate(-45deg);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    & .navTitle {
+                        & span {
+                            color: $gray-500;
+                            font-size: .7em;
+                        }
+                    }
+                    &.active {
+                        &::before {
+                            background-color: $gray-200;
+                        }
+                        & .navIcon {
+                            & span {
+                                width: 1.3em;
+                                height: 1.3em;
+                                background-color: $theme1;
+                                &::before {
+                                    opacity: 1;
+                                }
+                                &::after {
+                                }
+                            }
+                        }
+                        & .navTitle {
+                            & span {
+                                color: $gray-700;
+                            }
+                        }
+                        & ~ .navItem {
+                            &::before {
+                                background-color: $gray-200;
+                            }
+                            & .navIcon {
+                                & span {
+                                    width: 1.3em;
+                                    height: 1.3em;
+                                    background-color: $theme1;
+                                    &::before {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: 0.2em;
+                                        left: -0.2em;
+                                    }
+                                    &::after {
+                                        opacity: 1;
+                                        top: 0em;
+                                        right: 0em;
+                                        bottom: -0.1em;
+                                        left: 0.3em;
+                                        height: 0.17em;
+                                    }
+                                }
+                            }
+                            & .navTitle {
+                                & span {
+                                    color: $gray-700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .registerCardBody {
+                & .innerBody {
+                    & input[type=number]::-webkit-inner-spin-button, 
+                    & input[type=number]::-webkit-outer-spin-button { 
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        margin: 0; 
+                    }
+                    & input[type=file].position-absolute {
+                        z-index: 2 !important;
+                    }
+                    & div.form-control {
+                        text-overflow: ellipsis;
+                        padding-top: 0.7em;
+                        direction: rtl;
+                        text-align: left;
+                    }
+                    & .tagify__tag:focus div::before, & .tagify__tag:hover:not([readonly]) div::before {
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    & .tagify__tag>div {
+                        border-radius: 50em;
+                    }
+                    & .tagify--select::after {
+                        display: none !important;
+                    }
+                    & .tagify__tag__removeBtn {
+                        display: none;
+                    }
+                    & .tagify__tag__removeBtn:hover {
+                        color: $white;
+                        background-color: $danger;
+                    }
+                    & .tagify__dropdown * {
+                        font-size: .7em !important;
+                    }
+                    & .tagify__input::before {
+                        color: $black !important;
+                    }
+                    & .tagify.form-control {
+                        height: auto;
+                        padding-right: 3em;
+                        &::before {
+                            content: "";
+                            background-image: url(../img/drpdwn-arrow.png);
+                            position: absolute;
+                            top: 0em;
+                            right: .8em;
+                            bottom: 0em;
+                            left: auto;
+                            margin: auto;
+                            width: 1em;
+                            height: 0.5em;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                        &:not(.tagify--empty) {
+                            & .tagify__input {
+                                &::before {
+                                    content: '' !important;
+                                }
+                            }
+                        }
+                    }
+                    & .otpTitle {
+                        & span {
+                            font-size: 1em;
+                            color: $black;
+                        }
+                    }
+                    & .otpIstruction {
+                        & span {
+                            font-size: 0.7em;
+                            color: $gray-500;
+                        }
+                    }
+                    & .otpFields {
+                        & input {
+                            height: auto;
+                            aspect-ratio: 2 /2;
+                            font-size: 1em;
+                            &::-moz-selection { /* Code for Firefox */
+                                color: $black;
+                                background: $white;
+                            }
+                            &::selection {
+                                color: $black;
+                                background: $white;
+                            }
+                        }
+                    }
+                    & .resendOtp {
+                        & span {
+                            font-size: .7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ##################  REGISTER AS Buyer PAGE CODE END  ################## //
+
+     // ##################  SUCCESS REGISTER AS BUYER PAGE CODE START  ################## //
+     .successRegisterAsBuyerPage {
+        background-color: lighten($theme1, 51);
+        & .successPopup {
+            max-width: 20em;
+            & .congratulationsIcon {
+                & img {
+                    height: 4em;
+                }
+            }
+            & .title {
+                & span {
+                    font-size: 1.1em;
+                }
+            }
+            & .subTitle {
+                & span {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+    // ##################  SUCCESS REGISTER AS BUYER PAGE CODE END  ################## //
+
+      // ##################  PRODUCTS PAGE CODE START  ################## //
+      .ProductsListPage {
+        & .headerRow {
+            & .heading {
+                & span {
+                    font-size: 1.1em;
+                }
+            }
+            & .searchInput {
+                padding-left: 2.5em;
+                &::placeholder {
+                    color: $gray-500;
+                }
+            }
+            & .searchIconImg {
+                position: absolute;
+                top: 0.55em;
+                left: 0.5em;
+                height: 0.8em;
+            }
+        }
+    }
+    // ##################  PRODUCTS PAGE CODE END  ################## //
+
+    // ##################  DATA TABLE CODE START  ################## //
+
+.customTableWrapper {
+    visibility: hidden;
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+            display: none !important;
+        }
+        & .customTable {
+            font-size: 0.65em !important;
+            border: 0.063em solid lighten($gray-200, 4);
+            border-collapse: collapse !important;
+            border-radius: 0.25em !important;
+            &:not(.collapsed) {
+                & thead {
+                    & tr {
+                        & th {
+                            &.plusIcon{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            &.plusIcon {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            & thead {
+                background-color: lighten($gray-200, 4);
+                & th {
+                    // padding-left: 1.2em;
+                    padding: 0.7em 3em;
+                    color: $gray-600;
+                    &:first-child {
+                        // padding-left: 2.6em !important;
+                    }
+                    &.select-checkbox {
+                        width: 2em !important;
+                        & .box{
+                            display: block;
+                            width: 1.05em;
+                            height: 1.05em;
+                            border: 0.063em solid $black;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border-radius: 0.2em;
+                            z-index: 2;
+                            &::before {
+                                content: "✓";
+                                position: absolute;
+                                z-index: 1;
+                                display: none;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                font-size: 1.213em !important;
+                                width: 1.05em !important;
+                                height: 1.05em !important;
+                                color: $gray-600 !important;
+                                text-align: center;
+                                text-shadow: 0.063em 0.063em $gray-600, -0.063em -0.063em $gray-600, 0.063em -0.063em $gray-600, -0.063em 0.063em $gray-600;
+                            }
+                            &.selected {
+                                &::before {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+                    &.plusIcon {
+                        padding-left: 1.2em !important;
+                        width: 2em !important;
+
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                            font-size: 1.1em !important;
+                            opacity: 0.8 !important;
+                            line-height: 0.45em !important;
+                        }
+                    }
+                }
+            }
+            & tbody {
+                &.proListTableBody {
+                    & .dtr-data {
+                        white-space: break-spaces !important;
+                    }
+                }
+                & .inquiryRow {
+                    vertical-align: middle;
+                    &:hover {
+                        background-color: lighten($theme1, 51);
+                    }
+                }
+                & tr {
+                    &.selected>*{
+                        box-shadow: inset 0 0 0 624.938em $theme1;
+                        color: $white;
+                        & img {
+                            filter: brightness(10);
+                        }
+                    }
+                }
+                & td {
+                    // padding: 1.2em;
+                    padding: 0.9em 3em;
+                    color: $gray-600;
+                    & .statusPill {
+                        padding: 0.125em 0.63em;
+                        border-radius: 0.2em;
+                        --bs-bg-opacity: 0.3 !important;
+                        font-weight: 600;
+                        &.pendingPill {
+                            background-color: lighten($orange, 31);
+                            color: $orange;
+                        }
+                    }
+                    &.plusIcon {
+                        padding-left: 1.2em !important;
+                        width: 2em !important;
+                        &::before {
+                            left: 1.5em !important;
+                        }
+                    }
+                    &.select-checkbox {
+                        width: 2em !important;
+                        &::before {
+                            margin: 0 !important;
+                            top: 50%;
+                            transform: translate(-50% , -50%);
+                            cursor: pointer;
+                        }
+                        &::after {
+                            margin-top: -0.188em !important;
+                            margin-left: 0 !important;
+                            font-size: 1.213em !important;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            cursor: pointer;
+                        }
+                    }
+                    &.outOfStock,
+                    &.zeroQty{
+                        color: $pink;
+                    }
+                    & .actionImg {
+                        height: 1.2em;
+                        cursor: pointer;
+                    }
+                    & .actionImg1 {
+                        height: 1.1em;
+                        cursor: pointer;
+                    }
+                    & .actionImg3 {
+                        height: 1.3em;
+                        cursor: pointer;
+                    }
+                    & .heartBtn {
+                        &.active {
+                            & .heartFilled {
+                                display: block !important;
+                            }
+                            & .heartUnFilled {
+                                display: none !important;
+                            }
+                        }
+                    }
+                    
+                    & .actionImg2 {
+                        height: 1.9em;
+                        cursor: pointer;
+                    }
+                    &.dtr-control {
+                        &::before {
+                            display: flex !important;
+                            align-items: center;
+                            justify-content: center;
+                            line-height: initial !important;
+                            background-color: $theme1 !important;
+                        }
+                    }
+                    & .dtr-details {
+                        width: 100%;
+                    }
+                    & .inquiryProImg {
+                        & img {
+                            height: 4em;
+                            width: 4em;                          
+                            border-radius: 0.4em;
+                            overflow: hidden;
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                            white-space: break-spaces;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    & .inquiryUserImg {
+                        height: 3em;
+                        width: 3em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        & img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    & .inquiryCallImg {
+                        height: 1.1em;
+                    }
+                    & .inquiryLocationImg {
+                        height: 1.3em;
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                position: relative;
+                border: 0.063em solid lighten($gray-200, 4);
+                padding: 0.93em 0;
+                border-radius: 0.35em;
+                margin: 0.63em 0 0 0;
+                & .dataTables_info {
+                    font-size: 0.7em;
+                    padding-top: 0 !important;
+                }
+                & .dataTables_paginate {
+                    font-size: 0.7em;
+                    & .paginate_button {
+                        margin: 0 0.3em;
+                        & .page-link {
+                            color: $black !important;
+                            border: none !important;
+                            height: 1.8em;
+                            width: 1.8em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 0.25em;
+                            &:focus {
+                                box-shadow: none !important;
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                                background-color: $gray-200 !important;
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                                background-color: $theme1 !important;
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.dashBoardTable {
+        margin-top: -0.4em;
+        & .dataTables_wrapper  {
+            & .customDashboardTable {
+                border-color: $gray-200!important;
+            }
+            & .row {
+                &:nth-child(3) {
+                    display: none !important;
+                }
+            }
+            & .dInboxRow {
+                opacity: 0.7;
+                &.unread {
+                    opacity: 1 !important;
+                }
+                &:nth-of-type(1n + 1) {
+                    & .inquiryUserImgName {
+                            background-color: $theme1;
+                    }
+                }
+                &:nth-of-type(2n + 2) {
+                    & .inquiryUserImgName {
+                            background-color: $danger;
+                    }
+                }
+                &:nth-of-type(3n + 3) {
+                    & .inquiryUserImgName {
+                            background-color: $pink;
+                    }
+                }
+                &:nth-of-type(4n + 4) {
+                    & .inquiryUserImgName {
+                            background-color: $success;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ##################  DATA TABLE CODE END  ################## //
+
+// ##################  INBOX PAGE CODE START  ################## //
+
+.inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            width: $inbox-leftBar-width;
+            & .leftInboxInner {
+                background-color: lighten($theme1, 51);
+                border: 0.063em solid lighten($theme1, 51);
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        color: $theme1;
+                        font-size: 1em;
+                        &::after {
+                            background-image: url(../img/drpdown-arrow-blue.png);
+                            border: none;
+                            width: 0.8em;
+                            height: 0.5em;
+                            background-size: cover;
+                        }
+                    }
+                    & .dropdown-menu {
+                        padding: 0.4em;
+                        left: auto;
+                        & .dropdown-item {
+                            font-size: .8em;
+                            color: #6c757d;
+                            &:hover,
+                            &:active {
+                                background-color: $theme1;
+                                color: $white;
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0.63em;
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    overflow-y: auto;
+                    & .leftInboxCard {
+                        border-top: 0.063em solid $gray-200;
+                        border-bottom: 0.063em solid $gray-200;
+                        text-decoration: none;
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                    background-color: $green;
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                    background-color: $pink;
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                    background-color: $cyan;
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                    background-color: $red;
+                                }
+                            }
+                        }
+                        & .userBox {
+                            width: 2.2em;
+                            height: 2.2em;
+                            & img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                            & span {
+                                text-transform: uppercase;
+                                color: $white;
+                                font-size: 0.83em;
+                                border-radius: 50%;
+                            }
+                        }
+                        & .iuserDetails {
+                            color: $gray-500;
+                            & .iUserName {
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                    height: 0.7em;
+                                }
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                            & .iUserMessage {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                & span {
+                                    font-size: 0.6em;
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                                color: $black !important;
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                            background-color: $white;
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                height: 1.5em;
+                                width: 1.5em;
+                                background-color: transparent;
+                                border-radius: 0.3em;
+                                color: $black;
+                                & span {
+                                    font-size: 0.7em;
+                                }
+                                &.prev,
+                                &.next {
+                                    background-color: $gray-200;
+                                    & img {
+                                        height: 0.6em;
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    background-color: $theme1;
+                                    color: $white;
+                                    & img {
+                                        filter: brightness(10);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            width: calc(100% - $inbox-leftBar-width);
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                            height: 0.8em;
+                        }
+                    }
+                & .rightInnerTopSection {
+                    padding: 0.3em;
+                    flex: 0 0 auto;
+                    border: 0.063em solid $gray-200;
+                }
+                & .rightInnerMiddleSection {
+                    overflow-y: auto;
+                    border-left: 0.063em solid $gray-200;
+                    border-right: 0.063em solid $gray-200;
+                    padding-top: 0.75em;
+                    padding-bottom: 0.75em;
+                    & .RightuserImg {
+                        & img {
+                            height: 1.8em;
+                        }
+                    }
+                    & .RightuserName {
+                        font-size: 0.65em;
+                    }
+                    & .RightuserLocation {
+                        & img {
+                            height: 0.7em;
+                        }
+                        & span {
+                            font-size: 0.65em;
+                        }
+                    }
+                    & .RightuserTime {
+                        color: $gray-500;
+                        & span {
+                            font-size: 0.65em;
+                        }
+                    }
+                    & .customTable {
+                        background-color: $gray-200;
+                        & thead {
+                            & tr {
+                                & th {
+                                    // white-space: nowrap;
+                                    &.productInfoTh {
+                                        width: 50%;
+                                    }
+                                    & span {
+                                        font-size: 0.65em;
+                                        color: $gray-600;
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    // white-space: nowrap;
+                                    vertical-align: middle;
+                                    & span {
+                                        font-size: 0.65em;
+                                    }
+                                    & img {
+                                        height: 2.7em;
+                                    }
+                                    & .colorSpan {
+                                        height: 1.93em;
+                                        background-color: $gray-600;
+                                        border: 0.2em solid $black;
+                                        width: 1.93em;
+                                        border-radius: 0.2em;
+                                    }
+                                    
+                                    & .productSizeTd {
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {
+                        color: $gray-600;
+                        font-size: 0.65em;              
+                    }
+                    & .attachImg {
+                        height: 7em;
+                    }
+                }
+                & .rightInnerBottomSection {
+                    flex: 0 0 auto;
+                    border: 0.063em solid $gray-200;
+                    & .replyBtn {
+                        font-size: 0.65em;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+                & .rightInnerBottomSection2 {
+                    flex: 0 0 auto;
+                    & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+                        border-color: $gray-200 !important;
+                        box-shadow: none !important;
+                    }
+                    & .rightInnerBottomSection2Inner {
+                        border: 0.063em solid $gray-200;
+                        border-top: none;
+                        & .sendBtn {
+                            font-size: 0.65em;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &.sendMessage {
+                    & .rightInnerBottomSection {
+                        display: none;
+                    }
+                    & .rightInnerBottomSection2 {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+    & .chatPageInner {
+        & .chatHeading {
+            color: $black;
+            font-size: 1em;
+        }
+        & .userStatus {
+            width: 0.6em;
+            height: 0.6em;
+            position: absolute;
+            top: 80%;
+            right: 0.2em;
+            border: 0.15em solid white;
+            &.online {
+                background-color: $success !important;
+            }
+            &.offline {
+                background-color: $gray-500 !important;
+            }
+            &.waiting {
+                background-color: $warning !important;
+            }
+        }
+        & .userMsgNumber {
+            background-color: $pink;
+            color: $white;
+            height: 1.2em;
+            width: 1.2em;
+            & span {
+                font-size: 0.6em;
+            }
+        }
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            & .userStatus {
+                right: 0.025em !important;
+                top: 72%;
+            }
+        }
+        & .chatUserName {
+            color: $black;
+            font-size: 0.7em;
+        }
+        & .chatUserStatus {
+            color: $gray-500;
+            font-size: 0.55em;
+        }
+        & .mobcloseImg {
+            height: 1.2em;
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                    height: 0.063em;
+                    background-color: $gray-200;
+                    width: 100%;
+                }
+            }
+            & .dividerText {
+                & span {
+                    font-weight: 500;
+                    font-size: 0.65em;
+                    color: $gray-400;
+                }
+            }
+        }
+        & .chatMsgBox {
+            background-color: $gray-100;
+            padding: 0.75em;
+            & .chatMsg {
+                font-size: 0.6em;
+                color: $gray-700;
+            }
+            & .chatTime {
+                font-size: 0.6em;
+                color: $gray-500;
+            }
+        }
+        & .chatAttachedImg {
+            padding: 0.75em;
+            background-color: $gray-100;
+            & img {
+                height: 7em;
+            }
+        }
+        & .rightChatSide {
+            flex-direction: row-reverse;
+            & .row {
+                flex-direction: row-reverse;
+            }
+            & .chatMsgBox {
+                background-color: lighten($theme1, 51);
+            }
+            & .chatTime {
+                text-align: end;
+            }
+        }
+        & .btnField {
+            width: 6em;
+        }
+        & .inputField {
+            width: calc(100% - 6em);
+            visibility: hidden;
+            & .customEmojimojiInput {
+            }
+        }
+        & .attachImgWrapper {
+            display: inline-block;
+            position: absolute;
+            bottom: 0.04em;
+            left: 2.6em;
+            & .attachImgs {
+                height: 1.1em;
+                cursor: pointer;
+            }
+        }
+        & .emojionearea {
+            border: none !important;
+            box-shadow: none !important;
+            & .emojionearea-editor {
+                min-height: 2.2em;
+                font-size: 0.7em;
+                padding-left: 6em;
+            }
+            & .emojionearea-button {
+                left: 0% !important;
+                opacity: 1 !important;
+                bottom: 0em !important;
+                top: unset !important;
+                & .emojionearea-button-open,
+                & .emojionearea-button-close {
+                    background-image: url(../img/attachemoji.png) !important;
+                    background-repeat: no-repeat;
+                    background-position: center !important;
+                    background-size: 1.3em !important;
+                }
+            }
+        }
+        & .emojionearea-picker {
+            left: 0 !important;
+            & .emojionearea-wrapper {
+                &::after {
+                    left: 0 !important;
+                }
+                & .emojionearea-search {
+                    & .search {
+                        border: 0.063em solid $gray-200;
+                        font-size: 0.65em;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1em;
+                        border-radius: 0.4em;
+                    }
+                }
+            }
+        }
+    }
+    & * {
+        &::-webkit-scrollbar {
+            width: .5em;
+            height: .5em;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f100; 
+            border-radius: 50em;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(218, 218, 218, 0); 
+            border-radius: 50em;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(198, 198, 198, 0); 
+        }
+        &:hover > * {
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: rgb(218, 218, 218); 
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: rgb(198, 198, 198); 
+            }
+        }
+
+    }
+}
+
+
+// ##################  INBOX PAGE CODE END  ################## //
+
+
+
+
+// ##################  INQUIRY MAIL OFFCANVAS CODE START  ################## //
+
+.inquiryMailOffcanvas {
+    height: 30em !important;
+    left: unset !important;
+    max-width: 25em !important;
+    & .offcanvas-header {
+        border-bottom: 0.063em solid $gray-200;
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            & .userStatus {
+                right: 0.025em !important;
+                top: 72%;
+                width: 0.6em;
+                height: 0.6em;
+                position: absolute;
+                border: 0.15em solid white;
+                &.online {
+                    background-color: $success !important;
+                }
+                &.offline {
+                    background-color: $gray-500 !important;
+                }
+                &.waiting {
+                    background-color: $warning !important;
+                }
+            }
+        }
+        & .chatUserName {
+            color: $black;
+            font-size: 0.7em;
+        }
+        & .chatUserStatus {
+            color: $gray-500;
+            font-size: 0.55em;
+        }
+        & .closeImg {
+            height: 1.5em;
+            cursor: pointer;
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+                height: 2em;
+                width: 2em;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+        & .chatMsgBox {
+            background-color: $gray-100;
+            padding: 0.75em;
+            & .chatMsg {
+                font-size: 0.6em;
+                color: $gray-700;
+            }
+            & .chatTime {
+                font-size: 0.6em;
+                color: $gray-500;
+            }
+        }
+        & .chatAttachedImg {
+            padding: 0.75em;
+            background-color: $gray-100;
+            & img {
+                height: 7em;
+            }
+        }
+        & .rightChatSide {
+            flex-direction: row-reverse;
+            & .row {
+                flex-direction: row-reverse;
+            }
+            & .chatTime {
+                text-align: end;
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                    height: 0.063em;
+                    background-color: $gray-200;
+                    width: 100%;
+                }
+            }
+            & .dividerText {
+                & span {
+                    font-weight: 500;
+                    font-size: 0.65em;
+                    color: $gray-400;
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        border-top: 0.063em solid $gray-200;
+        & .btnField {
+            width: 6em;
+        }
+        & .inputField {
+            width: calc(100% - 6em);
+        }
+        & .attachImgWrapper {
+            display: inline-block;
+            position: absolute;
+            bottom: 0.04em;
+            left: 2.6em;
+            & .attachImgs {
+                height: 1.1em;
+                cursor: pointer;
+            }
+        }
+        & .emojionearea {
+            border: none !important;
+            box-shadow: none !important;
+            & .emojionearea-editor {
+                min-height: 2.2em;
+                font-size: 0.7em;
+                padding-left: 6em;
+            }
+            & .emojionearea-button {
+                left: 0% !important;
+                opacity: 1 !important;
+                bottom: 0em !important;
+                top: unset !important;
+                & .emojionearea-button-open,
+                & .emojionearea-button-close {
+                    background-image: url(../img/attachemoji.png) !important;
+                    background-repeat: no-repeat;
+                    background-position: center !important;
+                    background-size: 1.3em !important;
+                }
+            }
+        }
+        & .emojionearea-picker {
+            left: 0 !important;
+            & .emojionearea-wrapper {
+                &::after {
+                    left: 0 !important;
+                }
+                & .emojionearea-search {
+                    & .search {
+                        border: 0.063em solid $gray-200;
+                        font-size: 0.65em;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1em;
+                        border-radius: 0.4em;
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            font-size: 0.65em;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    & >*::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+// ##################  INQUIRY MAIL OFFCANVAS CODE END  ################## //
+
+// ##################  INQUIRY INBOX OFFCANVAS CODE START  ################## //
+
+.inboxOffcanvas {
+    height: 30em !important;
+    left: unset !important;
+    max-width: 25em !important;
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+                height: 0.8em;
+            }
+        }
+        & .topCloseBtn {
+            & img {
+                height: 1em;
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+                height: 1.8em;
+            }
+        }
+        & .RightuserName {
+            font-size: 0.65em;
+        }
+        & .RightuserLocation {
+            & img {
+                height: 0.7em;
+            }
+            & span {
+                font-size: 0.65em;
+            }
+        }
+        & .RightuserTime {
+            color: $gray-500;
+            & span {
+                font-size: 0.65em;
+            }
+        }
+        & .table-responsive {
+            & .customTable {
+                background-color: $gray-200;
+                margin-bottom: 0.25em;
+                & thead {
+                    & tr {
+                        & th {
+                            // white-space: nowrap;
+                            &.productInfoTh {
+                            }
+                            & span {
+                                font-size: 0.65em;
+                                color: $gray-600;
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            vertical-align: middle;
+                            & .productInfoTd {
+                                width: 25em;
+                            }
+                            & span {
+                                font-size: 0.65em;
+                            }
+                            & img {
+                                height: 2.7em;
+                            }
+                            & .colorSpan {
+                                height: 1.93em;
+                                background-color: $gray-600;
+                                border: 0.2em solid $black;
+                                width: 1.93em;
+                                border-radius: 0.2em;
+                            }
+                            
+                            & .productSizeTd {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+            &::-webkit-scrollbar-thumb {
+                background-color: $gray-300;
+            }
+            }
+            &::-webkit-scrollbar {
+                height: 0.4em;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                border-radius: 0.63em;
+            }
+        }
+        & .RightMsgText {
+            color: $gray-600;
+            font-size: 0.65em;              
+        }
+        & .attachImg {
+            height: 7em;
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            flex: 0 0 auto;
+            border: 0.063em solid $gray-200;
+            & .replyBtn {
+                font-size: 0.65em;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            flex: 0 0 auto;
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+                border-color: $gray-200 !important;
+                box-shadow: none !important;
+            }
+            & .rightInnerBottomSection2Inner {
+                border: 0.063em solid $gray-200;
+                border-top: none;
+                & .sendBtn {
+                    font-size: 0.65em;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+                display: none;
+            }
+            & .rightInnerBottomSection2 {
+                display: block !important;
+            }
+        }
+
+    }
+
+
+    
+}
+
+
+// ##################  INQUIRY INBOX OFFCANVAS CODE END  ################## //
+
+
+
+.ck-editor {
+    & .ck-placeholder[data-placeholder="Type your title"] {
+        display: none !important;
+    }
+    & .ck-button__label{
+    font-size: 1.8em !important;
+    }
+    & .ck-list__item {
+        & .ck-button {
+            & .ck-button__label{
+            font-size: 2.8em !important;
+            }
+        }
+    }
+    & .ck-toolbar__separator{
+        display: none !important;
+    }
+}
+.ck.ck-reset.ck-dropdown__panel.ck-dropdown__panel_sw.ck-dropdown__panel-visible{
+    max-width: 55em !important;
+}
+.ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+    border-color: $theme1 !important;
+}
+.ck.ck-dropdown.ck-toolbar__grouped-dropdown.ck-toolbar-dropdown * {
+    display: none !important;
+}
+.editor11{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Reply";
+            }
+        }
+    }
+}
+.editor12{
+    & ~ .ck-editor{
+        & .ck-placeholder{
+            &::before{
+                content: "Reply";
+            }
+        }
+    }
+}
+.arabicEditor{
+    & ~ .ck-editor{
+        & .ck-restricted-editing_mode_standard{
+            direction: rtl !important;
+            text-align: initial !important;
+        }
+    }
+}
+.ck {
+    &.ck-dropdown {
+        &.ck-toolbar-dropdown {
+            & .ck-dropdown__panel_se {
+                & .ck-button {
+                    & svg {
+                        &.ck-button__icon {
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.ck {
+    &.ck-dropdown {
+        &.ck-list-styles-dropdown {
+            & .ck-dropdown__panel_se {
+                & .ck-button {
+                    width: 6em;
+                    height: 6em;
+                    & svg {
+                        &.ck-button__icon {
+                            font-size: 3.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.ck {
+    &.ck-dropdown {
+        & .ck-dropdown__panel_se {
+            & .ck-find-and-replace-form {
+                font-size: 1.6em;
+                & .ck-form__header {
+                    font-size: 1.8em;
+                    padding-left: 0.4em;
+                }
+                & .ck-input-text {
+                    font-size: 2.7em;
+                }
+                & .ck-label {
+                    font-size: 2.2em;
+                }
+                & .ck-labeled-field-view__status {
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+}
+
+
+.invalid-feedback2 {
+    font-size: 0.7em;
+    color: $danger;
+}
+
+

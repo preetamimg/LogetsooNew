@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import "variables";
+@import "preloader";
+@import "forms";
+@import "heading";
+@import "buttons";
+@import "navbar";
+@import "footer";
+@import "pages";
+@import "responsive";
+
+
+
+body {
+    &.ar {
+        & .owl-carousel {
+            direction: rtl !important;
+            &.off {
+                direction: ltr !important;
+            }
+            &.bannerCarousel {
+                & .owl-stage {
+                    &.owl-item {
+                        &.active {
+                            & .bannerText {
+                                transform: translate(-18em, -50%) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .flipImage {
+            transform: scaleX(-1);
+        }
+        & .filterLabel1 {
+            & img {
+                transform: scaleX(-1);
+            }
+        }
+        & .categoryList {
+            & .drpDownImg {
+                transform: scaleX(-1);
+            }
+            &:hover {
+                & .drpDownImg {
+                    transform: translateX(0.25em) scaleX(-1) !important;
+                }
+            }
+        }
+    }
+}
+
+body {
+    direction: ltr;
+    & .select2 {
+        direction: ltr !important;
+    }
+    & .select2-dropdown {
+        direction: ltr !important;
+    }
+    & .owl-carousel {
+        & .owl-stage {
+            direction: ltr !important;
+        }
+    }
+}
+// ##################  SCROLLBODY CODE START  ################## //
+main.main {
+    min-height: 100vh;
+    & .bodyPart {
+        & .scrollPart {
+            overflow:hidden auto;
+            height: 100%;
+        }
+        @include allOtherPages-mixin();
+        
+    }
+}
+// ##################  SCROLLBODY CODE END  ################## //
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-theme1);
+    opacity: 1 !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "responsive";
+
+

@@ -1,0 +1,6694 @@
+// ##################  NAVBAR SECTION CODE START  ################## //
+// Small devices (landscape phones, 576px and up)
+@mixin navbarSection-min-sm() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin navbarSection-min-md() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    } 
+}
+
+// Large devices (desktops, 992px and up)
+@mixin navbarSection-min-lg() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin navbarSection-min-xl() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin navbarSection-min-xxl() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin navbarSection-max-xl() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin navbarSection-max-1300() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin navbarSection-max-lg() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .userProfileDrop {
+                padding-right: 0em !important;
+                & .userIcon {
+                    & img {
+                    }
+                }
+                & .userName {
+                    & span {
+                    }
+                }
+                & .userEmail {
+                    & span {
+                    }
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin navbarSection-max-md() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin navbarSection-max-sm() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                    height: 1.2em;
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin navbarSection-max-xs() {
+    nav.navbar {
+        & [class*="container"] {
+            & .navbar-brand {
+                & img {
+                }
+            }
+            & .navbar-toggler {
+                & .navbar-toggler-icon {
+    
+                }
+            }
+            & .navbar-collapse {
+                & .searchBar {
+                    & input {
+                        & ~ label {
+                            & .js-example-basic-single {
+                                & ~ .select2.select2-container {
+                                    & .selection {
+                                        & .select2-selection {
+                                            & .select2-selection__rendered {
+                                            }
+                                            & .select2-selection__arrow {
+                                                & b {
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btn {
+                    }
+                }
+                & .navbar-nav {
+                    & .nav-item {
+                        &.dropdown{
+                            &.withBg {
+                                & .nav-link {
+                                }
+                            }
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::after {
+                                }
+                            }
+                        }
+                        & .dropdown-menu {
+                            & .dropdown-item {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & ~ .offcanvas {
+            & .offcanvas-header {
+                & .offcanvas-title {
+                    & .searchbar {
+                        & input {
+                        }
+                        & .btn {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .btn-close {
+                }
+                & .nav-tabs {
+                    & .nav-item {
+                        & .nav-link {
+                            & span{
+                            }
+                            &.active {
+                            }
+                        }
+                    }
+                }
+            }
+            & .offcanvas-body {
+                & .tab-content {
+                    & .tab-pane {
+                        & .mobileMenuWrapper{
+                            & .MobileMenuList{
+                                & .MobileMenuListItem{
+                                    & span{
+                                    }
+                                }
+                                & img{
+                                }
+                                & .hotBadge{
+                                }
+                                & .newBadge{
+                                }
+                                &.active{
+                                    & .MobileMenuListItem{
+                                    }
+                                }
+                            }
+                            & .MobileMenuAllCategory{
+                                & .MobileMenuListItem{
+                                    & span{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            & .collapseMenuItem{
+                                & img{
+                                }
+                                &:not(.collapsed){
+                                    & img{
+                                    }
+                                    & + .MobileMenuListItem{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select2-container:not(.select2) {
+        & .select2-dropdown {
+            & .select2-search {
+            }
+            & .select2-results {
+                & .select2-results__options {
+                    & .select2-results__option {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ##################  NAVBAR SECTION CODE END  ################## //
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin inboxSendPage-min-sm() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin inboxSendPage-min-md() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            padding-left: 0.75em !important;
+            padding-right: 0.75em !important;
+            & .leftInboxInner {
+                border-radius: 0.375em;
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                    border-radius: 0.375em 0.375em 0 0;
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    border-radius: 0 0 0.375em 0.375em;
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+                & .rightInnerBottomSection2 {
+                    & .rightInnerBottomSection2Inner {
+                        border-radius:  0 0 0.375em 0.375em;
+                        & .sendBtn {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@mixin inboxSendPage-min-lg() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin inboxSendPage-min-xl() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin inboxSendPage-min-xxl() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin inboxSendPage-max-xs() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin inboxSendPage-max-sm() {
+    .inboxPage {
+    & .inboxPageInner {
+        position: relative;
+        &.show {
+            & .rightInbox {
+                & .rightInboxInner {
+                    transform: translateY(0);
+                    & .rightInnerMiddleSection {
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+        & .leftInbox {
+            width: 100%;
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            width: 100%;
+            & .rightInboxInner {
+                // position: absolute;
+                // width: 100%;
+                // top: 0;
+                // left: 0;
+                // transform: translateX(-150%);
+                // background-color: $white;
+                // z-index: 9;
+                // transition: 0.5s all ease-in-out;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(150%);
+                background-color: $white;
+                z-index: 9;
+                transition: 0.5s all ease-in-out;
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin inboxSendPage-max-md() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            width: 17em;
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            width: calc(100% - 17em);
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                    & .productInfoTd {
+                                        min-width: 22em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin inboxSendPage-max-lg() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin inboxSendPage-max-1300() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin inboxSendPage-max-xl() {
+    .inboxPage {
+    & .inboxPageInner {
+        & .leftInbox {
+            & .leftInboxInner {
+                & .leftInnerTopSection {
+                    & .dropdown-toggle {
+                        &::after {
+                        }
+                    }
+                    & .dropdown-menu {
+                        & .dropdown-item {
+                            &:hover,
+                            &:active {
+                            }
+                        }
+                    }
+                    & .searchBox {
+                        & .searchImg {
+                        }
+                    }
+                }
+                & .leftInnerScrollSection {
+                    & .leftInboxCard {
+                        &:nth-of-type(1n + 1) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(2n + 2) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(3n + 3) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        &:nth-of-type(4n + 4) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }                       
+                        &:nth-of-type(5n + 5) {
+                            & .userBox {
+                                & span {
+                                }
+                            }
+                        }
+                        & .userBox {
+                            & img {
+                            }
+                            & span {
+                            }
+                        }
+                        & .iuserDetails {
+                            & .iUserName {
+                                & span {
+                                }
+                            }
+                            & .iUserAction {
+                                & img {
+                                }
+                                & span {
+                                }
+                            }
+                            & .iUserMessage {
+                                & span {
+                                }
+                            }
+                        }
+                        &.unread {
+                            & .iuserDetails {
+                            }
+                        }
+                        &:hover,
+                        &.active {
+                        }
+                    }
+                }
+                & .leftInnerBottomSection {
+                    & .pagination {
+                        & .page-item {
+                            & .page-link {
+                                & span {
+                                }
+                                &.prev,
+                                &.next {
+                                    & img {
+                                    }
+                                }
+                                &:hover,
+                                &.active {
+                                    & img {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rightInbox {
+            & .rightInboxInner {
+                    & .topBtn {
+                        & img {
+                        }
+                    }
+                & .rightInnerTopSection {
+                }
+                & .rightInnerMiddleSection {
+                    & .RightuserImg {
+                        & img {
+                        }
+                    }
+                    & .RightuserName {
+                    }
+                    & .RightuserTime {
+                        & span {
+                        }
+                    }
+                    & .customTable {
+                        & thead {
+                            & tr {
+                                & th {
+                                    & span {
+                                    }
+                                }
+                            }
+                        }
+                        & tbody {
+                            & tr {
+                                & td {
+                                    & span {
+                                    }
+                                    & img {
+                                    }
+                                    & .colorSpan {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .RightMsgText {             
+                    }
+                    & .attachImg {
+                    }
+                }
+                & .rightInnerBottomSection {
+                    & .replyBtn {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin dataTable-min-sm() {
+    .customTableWrapper {
+        & .dataTables_wrapper {
+            & .dataTables_length,
+            & .dataTables_filter {
+            }
+            & .customTable {
+                & thead {
+                    & th {
+                        &:first-child {
+                        }
+                        &.sorting {
+                            &::before,
+                            &::after {
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & .inquiryRow {
+                        &:hover {
+                        }
+                    }
+                    & td {
+                        &.outOfStock,
+                        &.zeroQty{
+                        }
+                        & .actionImg {
+                        }
+                        & .actionImg1 {
+                        }
+                        &.dtr-control {
+                            &::before {
+                            }
+                        }
+                        & .dtr-details {
+                        }
+                        & .inquiryProImg {
+                            & img {
+                            }
+                        }
+                        & .inquiryProDetails {
+                            & span {
+                            }
+                        }
+                        & .inquiryUserImg {
+                            & img {}
+                        }
+                        & .inquiryCallImg {
+                        }
+                        & .inquiryLocationImg {
+                        }
+                    }
+                }
+            }
+            & .row {
+                &:nth-child(3) {
+                    & .dataTables_info {
+                    }
+                    & .dataTables_paginate {
+                        & .paginate_button {
+                            & .page-link {
+                                &:focus {
+                                }
+                            }
+                            &.previous,
+                            &.next {
+                                & .page-link {
+                                }
+                            }
+                            &.active {
+                                & .page-link {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin dataTable-min-md() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    position: absolute !important;
+                    top: 50% !important;
+                    transform: translateY(-50%) !important;
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@mixin dataTable-min-lg() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin dataTable-min-xl() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin dataTable-min-xxl() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin dataTable-max-xs() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin dataTable-max-sm() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin dataTable-max-md() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin dataTable-max-lg() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// Large devices (desktops, less than 1300px)
+@mixin dataTable-max-1300() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin dataTable-max-xl() {
+    .customTableWrapper {
+    & .dataTables_wrapper {
+        & .dataTables_length,
+        & .dataTables_filter {
+        }
+        & .customTable {
+            & thead {
+                & th {
+                    &:first-child {
+                    }
+                    &.sorting {
+                        &::before,
+                        &::after {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & .inquiryRow {
+                    &:hover {
+                    }
+                }
+                & td {
+                    &.outOfStock,
+                    &.zeroQty{
+                    }
+                    & .actionImg {
+                    }
+                    & .actionImg1 {
+                    }
+                    &.dtr-control {
+                        &::before {
+                        }
+                    }
+                    & .dtr-details {
+                    }
+                    & .inquiryProImg {
+                        & img {
+                        }
+                    }
+                    & .inquiryProDetails {
+                        & span {
+                        }
+                    }
+                    & .inquiryUserImg {
+                        & img {}
+                    }
+                    & .inquiryCallImg {
+                    }
+                    & .inquiryLocationImg {
+                    }
+                }
+            }
+        }
+        & .row {
+            &:nth-child(3) {
+                & .dataTables_info {
+                }
+                & .dataTables_paginate {
+                    & .paginate_button {
+                        & .page-link {
+                            &:focus {
+                            }
+                        }
+                        &.previous,
+                        &.next {
+                            & .page-link {
+                            }
+                        }
+                        &.active {
+                            & .page-link {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin inquiryMailOffcanvas-min-sm() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Medium devices (tablets, 768px and up)
+@mixin inquiryMailOffcanvas-min-md() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Large devices (desktops, 992px and up)
+@mixin inquiryMailOffcanvas-min-lg() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin inquiryMailOffcanvas-min-xl() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin inquiryMailOffcanvas-min-xxl() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin inquiryMailOffcanvas-max-xs() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Small devices (landscape phones, less than 768px)
+@mixin inquiryMailOffcanvas-max-sm() {
+    .inquiryMailOffcanvas {
+        max-width: 100% !important;
+        height: 18em !important;
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Medium devices (tablets, less than 992px)
+@mixin inquiryMailOffcanvas-max-md() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Large devices (desktops, less than 1200px)
+@mixin inquiryMailOffcanvas-max-lg() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin inquiryMailOffcanvas-max-xl() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+// Large devices (desktops, less than 1300px)
+@mixin inquiryMailOffcanvas-max-1300() {
+    .inquiryMailOffcanvas {
+    & .offcanvas-header {
+        & .chatuserImg {
+            & img {
+            }
+            & .userStatus {
+                &.online {
+                }
+                &.offline {
+                }
+                &.waiting {
+                }
+            }
+        }
+        & .chatUserName {
+        }
+        & .chatUserStatus {
+        }
+        & .closeImg {
+        }
+    }
+    & .offcanvas-body {
+        & .chatuserImg {
+            & img {
+            }
+        }
+        & .chatMsgBox {
+            & .chatMsg {
+            }
+            & .chatTime {
+            }
+        }
+        & .chatAttachedImg {
+            & img {
+            }
+        }
+        & .rightChatSide {
+            & .row {
+            }
+            & .chatTime {
+            }
+        }
+        & .dividerSection {
+            & .dividerLine {
+                & span {
+                }
+            }
+            & .dividerText {
+                & span {
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .btnField {
+        }
+        & .inputField {
+        }
+        & .attachImgWrapper {
+            & .attachImgs {
+            }
+        }
+        & .emojionearea {
+            & .emojionearea-editor {
+            }
+            & .emojionearea-button {
+                & .emojionearea-button-open {
+                }
+                & .emojionearea-button-close {
+                }
+            }
+        }
+        & .emojionearea-picker {
+            & .emojionearea-wrapper {
+                &::after {
+                }
+                & .emojionearea-search {
+                    & .search {
+                    }
+                }
+            }
+        }
+        & .replyBtn {
+            &:hover {
+            }
+        }
+    }
+}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin inboxOffcanvas-min-sm() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Medium devices (tablets, 768px and up)
+@mixin inboxOffcanvas-min-md() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Large devices (desktops, 992px and up)
+@mixin inboxOffcanvas-min-lg() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin inboxOffcanvas-min-xl() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin inboxOffcanvas-min-xxl() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin inboxOffcanvas-max-xs() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Small devices (landscape phones, less than 768px)
+@mixin inboxOffcanvas-max-sm() {
+    .inboxOffcanvas {
+        max-width: 100% !important;
+        height: 18em !important;
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Medium devices (tablets, less than 992px)
+@mixin inboxOffcanvas-max-md() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Large devices (desktops, less than 1200px)
+@mixin inboxOffcanvas-max-lg() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin inboxOffcanvas-max-xl() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+// Large devices (desktops, less than 1300px)
+@mixin inboxOffcanvas-max-1300() {
+    .inboxOffcanvas {
+    & .offcanvas-header {
+        & .topBtn {
+            & img {
+            }
+        }
+        & .topCloseBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        & .RightuserImg {
+            & img {
+            }
+        }
+        & .RightuserName {
+        }
+        & .RightuserTime {
+            & span {
+            }
+        }
+        & .customTable {
+            & thead {
+                & tr {
+                    & th {
+                        &.productInfoTh {
+                        }
+                        & span {
+                        }
+                    }
+                }
+            }
+            & tbody {
+                & tr {
+                    & td {
+                        & .productInfoTd {
+                        }
+                        & span {
+                        }
+                        & img {
+                        }
+                        & .colorSpan {
+                        }
+                        
+                        & .productSizeTd {
+                        }
+                    }
+                }
+            }
+        }
+        & .RightMsgText {         
+        }
+        & .attachImg {
+        }
+    }
+    & .offcanvas-footer {
+        & .rightInnerBottomSection {
+            & .replyBtn {
+                &:hover {
+                }
+            }
+        }
+        & .rightInnerBottomSection2 {
+            & .ck-restricted-editing_mode_standard.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused{
+            }
+            & .rightInnerBottomSection2Inner {
+                & .sendBtn {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        &.sendMessage {
+            & .rightInnerBottomSection {
+            }
+            & .rightInnerBottomSection2 {
+            }
+        }
+
+    }
+
+
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 36em) {
+    @include navbarSection-min-sm();
+    @include inboxSendPage-min-sm();
+    @include dataTable-min-sm();
+    @include inboxOffcanvas-min-sm();
+    @include inquiryMailOffcanvas-min-sm();
+    // @include searchResultPage-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 48em) {
+    @include navbarSection-min-md();
+    @include inboxSendPage-min-md();
+    @include dataTable-min-md();
+    @include inboxOffcanvas-min-md();
+    @include inquiryMailOffcanvas-min-md();
+    // @include searchResultPage-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 62em) {
+    @include navbarSection-min-lg();
+    @include inboxSendPage-min-lg();
+    @include dataTable-min-lg();
+    @include inboxOffcanvas-min-lg();
+    @include inquiryMailOffcanvas-min-lg();
+    // @include searchResultPage-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 75em) {
+    @include navbarSection-min-xl();
+    @include inboxSendPage-min-xl();
+    @include dataTable-min-xl();
+    @include inboxOffcanvas-min-xl();
+    @include inquiryMailOffcanvas-min-xl();
+    // @include searchResultPage-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 87.5em) {
+    @include navbarSection-min-xxl();    
+    @include inboxSendPage-min-xxl();
+    @include dataTable-min-xxl();
+    @include inboxOffcanvas-min-xxl();
+    @include inquiryMailOffcanvas-min-xxl();
+    // @include searchResultPage-min-xxl();
+}
+
+// XX-Large devices (large desktops, less than 6200px)
+@media (max-width: 387.499em) {
+    body {
+        font-size: 4em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -0.2vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 4610px)
+@media (max-width: 288.124em) {
+    body {
+        font-size: 3em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -0.6vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 3080px)
+@media (max-width: 192.499em) {
+    body {
+        font-size: 2em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -0.7vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 2310px)
+@media (max-width: 144.374em) {
+    body {
+        font-size: 1.5em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.1vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 2050px)
+@media (max-width: 128.124em) {
+    body {
+        font-size: 1.33em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.2vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 1925px)
+@media (max-width: 120.311em) {
+    body {
+        font-size: 1.25em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.2vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 1710px)
+@media (max-width: 106.874em) {
+    body {
+        font-size: 1.11em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.1vw) !important;
+            }
+        }
+    }
+}
+
+// XX-Large devices (large desktops, less than 1538em)
+@media (max-width: 96.125em) {
+    body {
+        font-size: 1em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.2vw) !important;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 87.499em) {
+    @include navbarSection-max-xl();
+    @include inboxSendPage-max-xl();
+    @include dataTable-max-xl();
+    @include inboxOffcanvas-max-xl();
+    @include inquiryMailOffcanvas-max-xl();
+    // @include searchResultPage-max-xl();    
+body {
+        font-size: 1em !important;
+
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -0.9vw) !important;
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1300px)
+@media (max-width: 81.249em) {
+    @include navbarSection-max-1300();   
+    @include inboxSendPage-max-1300();
+    @include dataTable-max-1300();
+    @include inboxOffcanvas-max-1300();
+    @include inquiryMailOffcanvas-max-1300();
+    // @include searchResultPage-max-1300();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.999em) {
+    @include navbarSection-max-lg();
+    @include inboxSendPage-max-lg();
+    @include dataTable-max-lg(); 
+    @include inboxOffcanvas-max-lg();
+    @include inquiryMailOffcanvas-max-lg();
+    // @include searchResultPage-max-lg();
+    body {
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -1.9vw) !important;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.999em) {
+    @include navbarSection-max-md();
+    @include inboxSendPage-max-md();
+    @include dataTable-max-md();
+    @include inboxOffcanvas-max-md();
+    @include inquiryMailOffcanvas-max-md();
+    // @include searchResultPage-max-md();    
+body {
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -3.5vw) !important;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.999em) {
+    @include navbarSection-max-sm();
+    @include inboxSendPage-max-sm();
+    @include dataTable-max-sm();
+    @include inboxOffcanvas-max-sm();
+    @include inquiryMailOffcanvas-max-sm();
+    // @include searchResultPage-max-sm();    
+body {
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -4.5vw) !important;
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.999em) {
+    @include navbarSection-max-xs();
+    @include inboxSendPage-max-xs();
+    @include dataTable-max-xs();
+    @include inboxOffcanvas-max-xs();
+    @include inquiryMailOffcanvas-max-xs();
+    // @include searchResultPage-max-xs();    
+body {     
+        font-size: 0.8em !important;
+        & .highcharts-figure {
+            & * {
+                font-size: calc(64% - -9vw) !important;
+            }
+        }
+    }
+}
+
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

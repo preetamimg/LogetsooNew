@@ -1,0 +1,337 @@
+
+// ##################  HEADER CODE START  ################## //
+nav.navbar {
+    & [class*="container"] {
+        & .navbar-brand {
+            & img {
+                height: 1.4em;
+            }
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+
+            }
+            & .RegisterCanvas{
+                font-size: 0.55em;
+                color: $white;
+                & img{
+                    height: 0.55em;
+                }
+            }
+            & .nav-item {
+                &.dropdown{
+                    gap: 0.2em;
+                    &.registerDropdown {
+                        & .flagIcon {
+                            height: 1em;
+                        }
+                        & .nav-link {
+                            &.dropdown-toggle {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .nav-link {
+                    font-size: 0.55em;
+                    &::before {
+                        background-color: $white;
+                        content: "";
+                        width: calc(100% - 0em);
+                        height: 1em;
+                        position: absolute;
+                        border-radius: 1em;
+                        top: auto;
+                        right: 0em;
+                        bottom: -3em;
+                        left: 0em;
+                        opacity: 0;
+                        margin: auto;
+                        transition: .3s all cubic-bezier(0, 0, 0.33, 1.83);
+                    }
+                    &:hover,
+                    &.active {
+                        &::before {
+                            width: calc(100% - 1.5em);
+                            height: 0.2em;
+                            bottom: -1.8em;
+                            opacity: 1;
+                        }
+                    }
+                    &.dropdown-toggle {
+                        &::after {
+                            background-image: url(../img/down-arrow.png);
+                            border: none;
+                            width: 0.8em;
+                            height: 0.5em;
+                            background-size: cover;
+                        }
+                    }
+                }
+                & .dropdown-menu {
+                    padding: 0.4em;
+                    left: auto;
+                    min-width: 6em !important;
+                    & .dropdown-item {
+                        color: $gray-600;
+                        padding: 0.2em !important;
+                        & span{
+                            font-size: 0.6em;                      
+                        }
+                        &:hover {
+                            background-color: $theme1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        & .navbar-collapse,
+        & .userProfile {
+            & .navbar-nav {
+                & .nav-item {
+                    &.dropdown{
+                        // font-size: 0.8em;
+                        gap: 0.2em;
+                        &.registerDropdown {   
+                            & .flagIcon {
+                                height: 1em;
+                            }
+                            & .nav-link {
+                                &.dropdown-toggle {
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            & .dropdown-menu {
+                                min-width: 8em !important;
+                            }
+                        }
+                    }
+                    & .nav-link {
+                        font-size: 0.7em;
+                        &::before {
+                            background-color: $white;
+                            content: "";
+                            width: calc(100% - 0em);
+                            height: 1em;
+                            position: absolute;
+                            border-radius: 1em;
+                            top: auto;
+                            right: 0em;
+                            bottom: -3em;
+                            left: 0em;
+                            opacity: 0;
+                            margin: auto;
+                            transition: .3s all cubic-bezier(0, 0, 0.33, 1.83);
+                            z-index: -1;
+                        }
+                        &:hover,
+                        &.active {
+                            &::before {
+                                width: calc(100% - 1.5em);
+                                height: 0.2em;
+                                bottom: -1.8em;
+                                opacity: 1;
+                                z-index: 1;
+                            }
+                        }
+                        &.dropdown-toggle {
+                            &::after {
+                                background-image: url(../img/down-arrow.png);
+                                border: none;
+                                width: 0.8em;
+                                height: 0.5em;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    & .dropdown-menu {
+                        padding: 0.4em;
+                        left: auto;
+                        & .dropdown-item {
+                            font-size: 0.8em;
+                            color: $gray-600;
+                            &:hover {
+                                background-color: $theme1;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .userProfile {
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: unset !important;
+                        max-width: 11.2em;
+                        padding-right: 1.5em;
+                        & .userIcon {
+                            & img {
+                                height: 1.8em;
+                                width: 1.8em;
+                                border-radius: 50em;
+                                overflow: hidden;
+                            }
+                        }
+                        & .userName {
+                            & span {
+                                font-size: .7em;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        & .userEmail {
+                            & span {
+                                font-size: .5em;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        &::after {
+                            position: absolute;
+                            top: 0em;
+                            right: 0em;
+                            bottom: 0em;
+                            left: auto;
+                            margin: auto;
+                            width: 0.6em;
+                            height: 0.4em;
+                        }
+                    }
+                    &.newNavLink {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -1.7em !important;
+                            right: auto !important;
+                            bottom: -2em !important;
+                            left: 0em !important;
+                            height: 4.8em !important;
+                            width: 0.08em !important;
+                            background-color: #ffffff52;
+                            opacity: 1;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mobileHeader{
+    width: 15em !important;
+    & .offcanvas-header{
+        & .btn-close{
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            bottom: auto;
+            left: auto;
+            filter: invert(1);
+            opacity: 1;
+        }
+    }
+    & .offcanvas-body{
+        & ul{
+            & li{
+                & .mobileMenu2{
+                    color: $black;
+                    text-decoration: none;
+                    & span{
+                        font-size: 0.7em;
+                    }
+                    & img{
+                        height: 0.5em;
+                        filter: brightness(0);
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:not(.collapsed){
+                        color: $theme1;
+                        & img{
+                            filter: brightness(1);
+                            transform: rotate(990deg);
+                        }
+                    }
+                }
+                & .mobileMenu3{
+                    color: $black;
+                    text-decoration: none;
+                    & span{
+                        font-size: 0.7em;
+                    }
+                    &.active{
+                        color: $theme1;
+                    }
+                }
+            }
+        }
+    }
+}
+// ##################  HEADER CODE END  ################## //
+
+.langDropdown {
+    & .nav-link  {
+        font-size: 0.7em;
+        &::before {
+            background-color: #fff;
+            content: "";
+            width: calc(100% - 0em);
+            height: 1em;
+            position: absolute;
+            border-radius: 1em;
+            top: auto;
+            right: 0em;
+            bottom: -3em;
+            left: 0em;
+            opacity: 0;
+            margin: auto;
+            transition: .3s all cubic-bezier(0, 0, 0.33, 1.83);
+            z-index: -1;
+        }
+        &::after {
+            background-image: url(../img/down-arrow.png);
+            border: none;
+            width: 0.8em;
+            height: 0.5em;
+            background-size: cover;
+        }
+    }
+    & .dropdown-menu {
+        padding: 0.4em;
+        min-width: 8em;
+        left: auto;
+        & .dropdown-item {
+            font-size: .8em;
+            color: #6c757d;
+            &:hover {
+                background-color: #298ec6;
+                color: #fff;
+            }
+        }
+    }
+}
+.langSelect {
+    font-size: 0.7em;
+    border-radius: 0 !important;
+    & option {
+        color: $black;
+    }
+    &:focus-visible {
+        outline: none !important;
+    }
+}
+@media (max-width: 74.999em) {
+nav.navbar [class*=container] .userProfile .nav-link {
+    padding-right: 0em !important;
+    &::after {
+        background-image: none !important;
+    }
+}
+}
+
+

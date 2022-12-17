@@ -1,0 +1,84 @@
+
+// ##################  FOOTER CODE START  ################## //
+.footerTopSection {
+    background-color: lighten($theme2, 20);
+    & .columnss {
+        & .icons {
+            & img {
+                width: 2em;
+                height: 2em;
+                object-fit: contain;
+            }
+        }
+        & .titles {
+            & span {
+                font-size: .8em;
+            }
+        }
+    }
+    & .goToTop {
+        position: absolute;
+        // inset: 0em 0em 0em auto;
+        top: 0em;
+        right: 0em;
+        bottom: 0em;
+        left: auto;
+        align-items: center;
+        & a {
+            & img {
+                height: 2.5em;
+            }
+        }
+    }
+}
+footer.footer {
+    & .inner {
+        font-size: .6em;
+        color: $gray-500;
+    }
+    & .LogoTitle {
+        height: 3.5em;
+        & img {
+            height: 1.5em;
+        }
+    }
+    & .textTitle {
+        height: 3.5em;
+        & span {
+            font-size: .8em;
+        }
+    }
+    & .lists {
+        & .list {
+            & span {
+                font-size: .7em;
+            }
+        }
+    }
+    & .socials {
+        & .social {
+            & img {
+                height: 1.5em;
+            }
+        }
+    }
+    & .copyrightsText {
+        font-size: .7em;
+        color: $gray-500;
+    }
+    & .customLang {
+        & .customMode {
+            & select {
+                background-color: darken($theme2, 6);
+                font-size: .7em;
+            }
+        }
+        & .languages {
+            & select {
+                background-color: darken($theme2, 6);
+                font-size: .7em;
+            }
+        }
+    }
+}
+// ##################  FOOTER CODE END  ################## //

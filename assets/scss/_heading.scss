@@ -1,0 +1,12 @@
+.headingStyle1 {
+    & .title {
+        & span {
+            font-size: 1.1em;
+        }
+    }
+    & .subTitle {
+        & span {
+            font-size: .75em;
+        }
+    }
+}

@@ -1,0 +1,336 @@
+nav.loginNavbar {
+    & .navbar-brand {
+        & img {
+            height: 1.4em;
+        }
+    }
+    & .langSelect {
+        font-size: 0.7em;
+        background-color: $gray-300;
+        padding: 0.2em 0.6em;
+        & option {
+            color: $black;
+        }
+    }
+}
+
+// ##################  HEADER CODE START  ################## //
+nav.navbar {
+    border-bottom: 0.09em solid $gray-500;
+    & [class*="container"] {
+        & .navbar-brand {
+            & img {
+                height: 1.6em;
+            }
+        }
+        & .navbar-toggler {
+            & .navbar-toggler-icon {
+
+            }
+        }
+        & .navbar-collapse {
+            & .searchBar {
+                height: 2.2em;
+                border-radius: 0.3em;
+                overflow: hidden;
+                & input {
+                    font-size: .7em;
+                    padding-left: 10.3em;
+                    padding-right: 4.5em;
+                    & ~ label {
+                        position: absolute;
+                        // inset: 0.1em auto 0.11em 0.1em;
+                        top: 0.1em;
+                        right: auto;
+                        bottom: 0.11em;
+                        left: 0.1em;
+                        border-radius: 0.2em 0em 0em 0.2em;
+                        overflow: hidden;
+                        & .js-example-basic-single {
+                            & ~ .select2.select2-container {
+                                height: 100%;
+                                display: flex;
+                                width: 6.5em !important;
+                                & .selection {
+                                    height: 100%;
+                                    display: flex;
+                                    width: 100%;
+                                    & .select2-selection {
+                                        background-color: $gray-100;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        position: relative;
+                                        border: none;
+                                        border-radius: 0em;
+                                        width: 100%;
+                                        & .select2-selection__rendered {
+                                            font-weight: 400;
+                                            font-size: .7em;
+                                        }
+                                        & .select2-selection__arrow {
+                                            height: 100%;
+                                            align-items: center;
+                                            display: flex;
+                                            // inset: 0em 0.2em 0em auto;
+                                            top: 0em;
+                                            right: 0.2em;
+                                            bottom: 0em;
+                                            left: auto;
+                                            & b {
+                                                border: none;
+                                                background-image: url(../userside/img/drpdwn-arrow.png);
+                                                width: 0.7em;
+                                                height: 0.4em;
+                                                background-size: cover;
+                                                background-repeat: no-repeat;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .btn {
+                    position: absolute;
+                    // inset: 0em 0em 0em auto;
+                    top: 0em;
+                    right: 0em;
+                    bottom: 0em;
+                    left: auto;
+                    & img {
+                        height: 0.8em;
+                    }
+                }
+            }
+        }
+            & .nav-item {
+                &.dropdown{
+                    // font-size: 0.8em;
+                    gap: 0.2em;
+                    &.withBg {
+                        & .nav-link {
+                            background-color: $gray-200;
+                        }
+                    }
+                }
+                & .nav-link {
+                    font-size: 0.7em;
+                    &.dropdown-toggle {
+                        &::after {
+                            background-image: url(../img/drpdwn-arrow.png);
+                            border: none;
+                            width: 0.85em;
+                            height: 0.5em;
+                            background-size: cover;
+                        }
+                    }
+                }
+                & .dropdown-menu {
+                    padding: 0.4em;
+                    left: auto;
+                    & .dropdown-item {
+                        font-size: 0.8em;
+                        color: $gray-600;
+                        &:hover {
+                            background-color: $theme1;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+        & .rightPartActions {
+            & a {
+                & img {
+                    height: 1.1em;
+                    width: 1.1em;
+                    object-fit: contain;
+                    filter: contrast(0.2);
+                }
+            }
+        }
+        & .userProfileDrop {
+            font-size: unset !important;
+            max-width: 11.2em;
+            padding-right: 1.5em;
+            & .userIcon {
+                & img {
+                    height: 1.8em;
+                    width: 1.8em;
+                    border-radius: 50em;
+                    overflow: hidden;
+                }
+            }
+            & .userName {
+                & span {
+                    font-size: .7em;
+                    text-overflow: ellipsis;
+                }
+            }
+            & .userEmail {
+                & span {
+                    font-size: .5em;
+                    text-overflow: ellipsis;
+                }
+            }
+            &::after {
+                position: absolute;
+                top: 0em;
+                right: 0em;
+                bottom: 0em;
+                left: auto;
+                margin: auto;
+                width: 0.7em !important;
+                height: 0.4em !important;
+            }
+        }
+    }
+    & ~ .offcanvas {
+        --bs-offcanvas-width: 18.5em;
+        & .offcanvas-header {
+            & .offcanvas-title {
+                & .searchbar {
+                    & input {
+                        border: 1px solid $gray-300;
+                        padding-right: 3em;
+                        border-radius: 0.2em;
+                        height: 3em;
+                        // font-size: 0.9em;
+                    }
+                    & .btn {
+                        // inset: 0.1em 0.1em 0.1em auto;
+                        top: 0.1em;
+                        right: 0.1em;
+                        bottom: 0.1em;
+                        left: auto;
+                        & img {
+                            height: 1.2em;
+                            width: 1.2em;
+                            object-fit: contain;
+                            filter: brightness(0);
+                        }
+                    }
+                }
+            }
+            & .btn-close {
+                position: fixed;
+                // inset: 1em 1em auto auto;
+                top: 1em;
+                right: 1em;
+                bottom: auto;
+                left: auto;
+                filter: invert(1);
+                opacity: 1;
+            }
+            & .nav-tabs {
+                & .nav-item {
+                    & .nav-link {
+                        color: $white;
+                        border-width: 0em 0em 0.1em 0em;
+                        border-style: solid;
+                        border-color: $white;
+                        & span{
+                            font-size: 0.8em;
+                        }
+                        &.active {
+                            color: $theme1;
+                            border-color: $theme1;
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .mobileMenuWrapper{
+                & .MobileMenuList{
+                    & .MobileMenuListItem{
+                        text-decoration: none;
+                        color: $black;
+                        & span{
+                            font-size: 0.7em;
+                        }
+                        &:hover {
+                            color: $theme1;
+                        }
+                    }
+                    & img{
+                        height: 2.5em;
+                    }
+                    &.active{
+                        & .MobileMenuListItem{
+                            color: $theme1;
+                        }
+                    }
+                    &:not(.collapsed){
+                        & .arrowImg{
+                            filter: brightness(1);
+                            transform: rotate(990deg);
+                        }
+                        & .arrowImg2 {
+                            transform: rotate(0deg);
+                        }
+                        & .MobileMenuListItem1{
+                            color: $theme1 !important;
+                        }
+                    }
+                }
+                & .MobileMenuAllCategory{
+                    & .MobileMenuListItem{
+                        color: $theme1;
+                        & span{
+                            font-size: 0.8em;
+                            & img{
+                                height: 1em;
+                            }
+                        }
+                    }
+                }
+                
+                & .collapseMenuItem{
+                    & .arrowImg{
+                        height: 0.5em;
+                        filter: brightness(0);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+.select2-container:not(.select2) {
+    & .select2-dropdown {
+        border: none;
+        box-shadow: 0em 0.2em 0.5em -0.1em silver;
+        & .select2-search {
+            display: none;
+        }
+        & .select2-results {
+            & .select2-results__options {
+                padding: 0.2em;
+                gap: 0.2em;
+                display: grid;
+                & .select2-results__option {
+                    font-size: .7em;
+                    border-radius: .2em;
+                }
+            }
+        }
+    }
+}
+.searchbarCanvas {
+    height: 4.8em !important;
+}
+.langSelect {
+    font-size: 0.7em;
+    background-color: $gray-200;
+    border-color: $gray-200;
+    padding: 0.2em;
+    &:focus-visible {
+        outline: none !important;
+    }
+}
+
+
+// ##################  HEADER CODE END  ################## //

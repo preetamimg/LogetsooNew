@@ -1,0 +1,41 @@
+
+// ##################  FOOTER CODE START  ################## //
+footer.footer {
+    font-size: inherit !important;
+    text-align: left;
+    & .inner {
+        font-size: .6em;
+        color: $gray-500;
+    }
+    & .LogoTitle {
+        height: 3.5em;
+        & img {
+            height: 1.5em;
+        }
+    }
+    & .textTitle {
+        height: 3.5em;
+        & span {
+            font-size: .8em;
+        }
+    }
+    & .lists {
+        & .list {
+            & span {
+                font-size: .7em;
+            }
+        }
+    }
+    & .socials {
+        & .social {
+            & img {
+                height: 1.5em;
+            }
+        }
+    }
+    & .copyrightsText {
+        font-size: .7em;
+        color: $gray-500;
+    }
+}
+// ##################  FOOTER CODE END  ################## //

@@ -1,0 +1,23 @@
+.btnStyle2 {
+    font-size: 0.7em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+.loginWithBtn {
+    background-color: $gray-200;
+    & img {
+        height: 1.25em;
+    }
+    &:hover,
+    &:focus {
+        background-color: lighten($theme1, 41);
+        border-color: lighten($theme1, 41) !important;
+    }
+}
